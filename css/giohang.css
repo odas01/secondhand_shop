@@ -1,0 +1,153 @@
+.note-list {
+  padding: 0 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.note-item {
+  color: #888;
+}
+
+.note-item:first-child {
+  flex: 3;
+}
+
+.note-item:nth-child(2),
+.note-item:nth-child(3),
+.note-item:nth-child(4) {
+  flex: 1;
+}
+
+.note-item:last-child {
+  width: 40px;
+}
+
+.cart-item-wrap {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 8px;
+}
+
+.cart-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.cart-name {
+  flex: 2;
+  padding: 28px 50px 0 16px;
+  margin-bottom: auto;
+  line-height: 20px;
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis; */
+}
+
+.cart-price {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gray-color);
+}
+
+.cart-count {
+  flex: 1;
+  display: flex;
+}
+
+.cart-change {
+  overflow: hidden;
+  position: relative;
+  background-color: #f9f9f9;
+  height: 35px;
+  width: 30px;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+
+.cart-quanlity {
+  background-color: var(--white-color);
+  height: 35px;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  padding: 0;
+  outline: none;
+}
+
+.cart-quanlity::-webkit-inner-spin-button,
+.cart-quanlity::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.cart-sum-price {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f05d40;
+}
+
+.cart-delete {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 6px;
+  border: none;
+  background-color: transparent;
+}
+
+.cart-total {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--white-color);
+  z-index: 1;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 40px;
+  box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.cart-total-title {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.cart-total-money {
+  font-size: 23px;
+  font-weight: 600;
+  color: #ee4d2d;
+}
+
+.cart-total-buy {
+  width: 150px;
+  background-color: #f05d40;
+  color: var(--white-color);
+  align-items: center;
+  padding: 12px 0;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.footer.cart {
+  margin-bottom: 50px;
+}

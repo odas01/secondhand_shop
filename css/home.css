@@ -38,7 +38,6 @@ p {
 
 /* HEADER */
 .header {
-  /* background-color: #1b2a49; */
   box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%) s;
 }
 
@@ -343,10 +342,11 @@ p {
   outline: none;
   background-color: #ee4e2e;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .main-pagination {
-  margin: 50px 0;
+  margin-top: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,6 +366,7 @@ p {
 
 /* FOOTER */
 .footer {
+  margin-top: 35px;
   padding: 30px 0 50px;
   border-top: 1px solid #00000080;
 }
