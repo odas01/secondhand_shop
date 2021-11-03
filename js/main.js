@@ -1,5 +1,6 @@
 "use strict";
 
+//Thanh tìm kiếm
 var searchInput = document.querySelector(".search-input");
 var searchContent = document.querySelector(".search-content");
 searchInput.oninput = function (e) {
@@ -20,22 +21,3 @@ searchInput.onkeyup = function (e) {
       break;
   }
 };
-
-//Danh mục
-var dellProduct = document.getElementById("dell");
-var asusProduct = document.getElementById("asus");
-var acerProduct = document.getElementById("acer");
-var lenovoProduct = document.getElementById("lenovo");
-var msiProduct = document.getElementById("msi");
-
-var dellItem = document.getElementsByClassName("dell-item");
-var asusItem = document.getElementsByClassName("asus-item");
-var acerItem = document.getElementsByClassName("acer-item");
-var lenovoItem = document.getElementsByClassName("lenovo-item");
-var msiItem = document.getElementsByClassName("msi-item");
-
-asusProduct.addEventListener("click", function () {
-  for (let index of asusItem) {
-    index.style.display = "block";
-  }
-});

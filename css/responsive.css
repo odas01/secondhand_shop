@@ -77,6 +77,51 @@
   .product-result {
     padding-top: 30px;
   }
+
+  /* giỏ hàng */
+  .note-list {
+    margin-bottom: 12px;
+    gap: 0 39px;
+  }
+
+  .note-item {
+    font-size: 16px;
+  }
+
+  .cart-item {
+    height: 95px;
+  }
+
+  .cart-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cart-name {
+    padding-top: 22px;
+    font-size: 14px;
+  }
+
+  .cart-price,
+  .cart-sum-price,
+  .cart-delete,
+  .cart-quanlity {
+    font-size: 15px;
+  }
+
+  .cart-change,
+  .cart-quanlity {
+    height: 25px;
+    width: 30px;
+  }
+
+  .footer {
+    margin-top: 28px;
+  }
+
+  .footer.cart {
+    margin-bottom: 40px;
+  }
 }
 
 /*  MOBILE  */
@@ -201,5 +246,71 @@
 
   .product-list {
     padding: 0 8px;
+  }
+
+  /* giỏ hàng */
+  .note-list {
+    display: none;
+  }
+
+  .cart-title-mobile {
+    text-align: center;
+    padding: 12px 0 20px 0;
+  }
+
+  .cart-title-mobile span {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--gray-darkest-color);
+  }
+
+  .cart-item {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .cart-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cart-name {
+    padding-top: 12px;
+    font-size: 14px;
+  }
+
+  .cart-content {
+    width: 100%;
+  }
+
+  .cart-price,
+  .cart-sum-price,
+  .cart-delete {
+    font-size: 14px;
+  }
+
+  .cart-change,
+  .cart-quanlity {
+    height: 25px;
+    width: 30px;
+  }
+
+  .cart-delete {
+    display: none;
+  }
+
+  .cart-total {
+    padding: 0 20px;
+    height: 90px;
+    text-align: center;
+  }
+
+  .cart-total-title {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .footer.cart {
+    margin-bottom: 85px;
   }
 }
