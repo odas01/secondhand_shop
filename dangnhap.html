@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/dangnhap.css" />
-    <link rel="stylesheet" href="./css/variable.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="form">
-      <div class="form-main">
-        <h1 class="form-header">Đăng nhập</h1>
-        <div class="form-body">
-          <form action="./home.html" method="get" class="form-wrap">
-            <div class="form-user">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="User name" required />
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./css/dangnhap.css" />
+      <link rel="stylesheet" href="./css/variable.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="main">
+         <form class="form" id="Login" method="POST" action="#">
+            <h1 class="form-header">Đăng nhập</h1>
+
+            <div class="form-group">
+               <label for="password" class="form-lable">Tên đăng nhập</label>
+               <input
+                  id="username"
+                  name="usename"
+                  class="form-input"
+                  type="text"
+                  rules="required"
+               />
+               <span class="form-error"></span>
             </div>
-            <div class="form-password">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" required />
+            <div class="form-group">
+               <label for="password" class="form-lable">Mật khẩu</label>
+               <input
+                  id="password"
+                  name="password"
+                  class="form-input"
+                  type="password"
+                  rules="required|minLength:6"
+               />
+               <span class="form-error"></span>
             </div>
-            <div>
-              <div class="form-remember">
-                <input type="checkbox" />
-                <span>Remember me</span>
-              </div>
-              <a href="" class="form-forgot"> Forgot Password?</a>
+
+            <div class="form-wrap">
+               <div>
+                  <input type="checkbox" class="form-check" />
+                  <span class="form-rmb">Remember password</span>
+               </div>
+               <span class="form-forgot">Forgot Password?</span>
             </div>
-            <input type="submit" class="form-submit" value="Login" />
-            <div class="form-link">
-              <a href="" class="form-fb">
-                <i class="fab fa-facebook"></i>
-                Facebook
-              </a>
-              <a href="" class="form-gg">
-                <i class="fab fa-google"></i>
-                Google
-              </a>
-            </div>
-          </form>
-        </div>
+            <button class="form-submit">Đăng nhập</button>
+         </form>
       </div>
-    </div>
-  </body>
+   </body>
+   <script src="./js/dangnhap.js"></script>
+   <script>
+      Validator('#Login');
+   </script>
 </html>
