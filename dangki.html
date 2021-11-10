@@ -17,14 +17,37 @@
          rel="stylesheet"
       />
 
-      <title>Đăng nhập</title>
+      <title>Đăng kí</title>
    </head>
    <body>
       <div class="main">
-         <form class="form" id="Login" method="get" action="./home.html">
-            <h1 class="form-header">Đăng nhập</h1>
+         <form class="form" id="Login" method="get" action="./dangnhap.html">
+            <h1 class="form-header">Đăng kí</h1>
+            <div class="form-group form-group-login">
+               <label for="phone" class="form-lable">Số điện thoại</label>
+               <input
+                  id="phone"
+                  name="phone"
+                  class="form-input"
+                  type="text"
+                  rules="required|number|minLength:9"
+               />
+               <span class="form-error"></span>
+            </div>
 
-            <div class="form-group">
+            <div class="form-group form-group-login">
+               <label for="email" class="form-lable">Email</label>
+               <input
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  type="text"
+                  rules="required|email"
+               />
+               <span class="form-error"></span>
+            </div>
+
+            <div class="form-group form-group-login">
                <label for="password" class="form-lable">Tên đăng nhập</label>
                <input
                   id="username"
@@ -35,7 +58,8 @@
                />
                <span class="form-error"></span>
             </div>
-            <div class="form-group">
+
+            <div class="form-group form-group-login">
                <label for="password" class="form-lable">Mật khẩu</label>
                <input
                   id="password"
@@ -47,28 +71,7 @@
                <span class="form-error"></span>
             </div>
 
-            <div class="form-wrap">
-               <div>
-                  <input type="checkbox" class="form-check" />
-                  <span class="form-rmb">Remember password</span>
-               </div>
-               <span class="form-forgot">Forgot Password?</span>
-            </div>
-            <button class="form-submit" id="form-submit-login">
-               Đăng nhập
-            </button>
-
-            <p>Hoặc</p>
-            <div class="form-link">
-               <a href="./home.html" class="form-link-fb">
-                  <i class="fab fa-facebook-f"></i>
-                  <span class="form-link-name">Facebook</span>
-               </a>
-               <a href="./home" class="form-link-google">
-                  <img class="form-link-img" src="./img/gg.jpg" alt="" />
-                  <span class="form-link-name">Google</span>
-               </a>
-            </div>
+            <button class="form-submit" id="form-submit-logup">Đăng kí</button>
          </form>
       </div>
    </body>

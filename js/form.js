@@ -1,16 +1,34 @@
 function Validator(selector) {
-   // Quy tắc
+   // Rules
    var validatorRules = {
+      //Bắt buộc
       required: function (value) {
          return value.trim() ? undefined : 'Vui lòng nhập trường này';
       },
 
+      //Số kí tự tối thiểu min
       minLength: function (min) {
          return function (value) {
             return value.length >= min
                ? undefined
                : `Vui lòng nhập ít nhất ${min} ký tự`;
          };
+      },
+
+      //Đúng email
+      email: function (value) {
+         var reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+         return reg.test(value) ? undefined : 'Vui lòng nhập đúng email';
+      },
+
+      number: function (value) {
+         var arrValue = value.split('');
+
+         return arrValue.every(function (course) {
+            return Number.isFinite(parseInt(course));
+         })
+            ? undefined
+            : 'Vui lòng nhập số';
       },
    };
 
@@ -71,6 +89,7 @@ function Validator(selector) {
          errorElement.innerHTML = '';
          parent.classList.remove('invalid');
       }
+      return !errorMessage;
    }
 
    function clearError(e) {
@@ -79,4 +98,24 @@ function Validator(selector) {
       errorElement.innerHTML = '';
       parent.classList.remove('invalid');
    }
+
+   formElement.onsubmit = function (e) {
+      e.preventDefault();
+      var inputs = formElement.querySelectorAll('[name][rules]');
+      var isErrorForm = false;
+      for (var input of inputs) {
+         //Khi bắt sự kiện của thẻ form
+         //thì sẽ trả về lần lượt các thẻ input và
+         //truyền vào hàm validate dưới dạng tham số
+
+         var isValid = validate({
+            target: input,
+         });
+
+         if (!isValid) {
+            isErrorForm = true;
+         }
+      }
+      if (!isErrorForm) formElement.submit();
+   };
 }
