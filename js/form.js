@@ -21,6 +21,7 @@ function Validator(selector) {
          return reg.test(value) ? undefined : 'Vui lòng nhập đúng email';
       },
 
+      //Toàn bộ là số
       number: function (value) {
          var arrValue = value.split('');
 
@@ -67,7 +68,9 @@ function Validator(selector) {
                formRules[input.name].push(ruleFunc);
             }
          }
+         //Xử lí khi blur ra khỏi input
          input.onblur = validate;
+         //Xử lí khi đang nhập vào ô input
          input.oninput = clearError;
       }
    }
