@@ -68,6 +68,7 @@ function Validator(selector) {
                formRules[input.name].push(ruleFunc);
             }
          }
+         console.log(formRules);
          //Xử lí khi blur ra khỏi input
          input.onblur = validate;
          //Xử lí khi đang nhập vào ô input

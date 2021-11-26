@@ -6,6 +6,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="./css/dangnhap.css" />
       <link rel="stylesheet" href="./css/variable.css" />
+      <link rel="stylesheet" href="./css/responsive.css" />
+
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -20,29 +22,29 @@
       <title>Đăng nhập</title>
    </head>
    <body>
-      <div class="main">
+      <div class="form-main">
          <form class="form" id="Login" method="get" action="./home.html">
-            <h1 class="form-header">Đăng nhập</h1>
+            <h1 class="form-header">Log In</h1>
 
             <div class="form-group">
-               <label for="password" class="form-lable">Tên đăng nhập</label>
                <input
                   id="username"
                   name="usename"
                   class="form-input"
                   type="text"
                   rules="required"
+                  placeholder="User name"
                />
                <span class="form-error"></span>
             </div>
             <div class="form-group">
-               <label for="password" class="form-lable">Mật khẩu</label>
                <input
                   id="password"
                   name="password"
                   class="form-input"
                   type="password"
                   rules="required|minLength:6"
+                  placeholder="Password"
                />
                <span class="form-error"></span>
             </div>
@@ -54,11 +56,9 @@
                </div>
                <span class="form-forgot">Forgot Password?</span>
             </div>
-            <button class="form-submit" id="form-submit-login">
-               Đăng nhập
-            </button>
+            <button class="form-submit" id="form-submit-login">Log In</button>
 
-            <p>Hoặc</p>
+            <p>OR</p>
             <div class="form-link">
                <a href="./home.html" class="form-link-fb">
                   <i class="fab fa-facebook-f"></i>

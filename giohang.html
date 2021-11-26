@@ -1,441 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/giohang.css" />
-    <link rel="stylesheet" href="./css/variable.css" />
-    <link rel="stylesheet" href="./css/grid.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap"
-      rel="stylesheet"
-    />
-    <title>Giỏ hàng</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__container">
-          <!-- NAVBAR -->
-          <div class="header__navbar">
-            <div class="logo">
-              <a href="#" class="logo-link">
-                <span>
-                  <i class="fas fa-book"></i>
-                  CHỢ ĐỒ CŨ
-                </span>
-              </a>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./css/home.css" />
+      <link rel="stylesheet" href="./css/grid.css" />
+      <link rel="stylesheet" href="./css/giohang.css" />
+      <link rel="stylesheet" href="./css/variable.css" />
+      <link rel="stylesheet" href="./css/responsive.css" />
+      <!-- fontawesome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      />
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+         rel="stylesheet"
+      />
+      <title>GIỎ HÀNG</title>
+   </head>
+   <body>
+      <div class="app">
+         <div class="dropdowns">
+            <div class="dropdow-overlay"></div>
+
+            <div class="dropdow-body">
+               <div class="dropdowns-form">
+                  <i class="far fa-user"></i>
+                  <div>
+                     <a href="">Đăng nhập</a>
+                     <a href="">Đăng kí</a>
+                  </div>
+               </div>
+               <div class="dropdowns-list">
+                  <a href="./home.html" class="dropdowns-item">Trang chủ</a>
+                  <a href="#!" class="dropdowns-item">Sản phẩm</a>
+                  <a href="#!" class="dropdowns-item">Bộ sưu tập</a>
+                  <a href="#footer_id" class="dropdowns-item">Liên hệ</a>
+               </div>
+
+               <div class="dropdowns-footer">
+                  <div class="dropdowns-footer-item">
+                     <i class="fas fa-phone"></i>
+                     <span>Gọi điện</span>
+                  </div>
+                  <div class="dropdowns-footer-item">
+                     <i class="fab fa-facebook-messenger"></i>
+                     <span>Nhắn tin</span>
+                  </div>
+               </div>
             </div>
+         </div>
+         <header class="header">
+            <div class="container">
+               <div class="header-navbar">
+                  <div class="menu-mobile">
+                     <div class="menu-mobile-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </div>
+                  </div>
+                  <div class="header-logo">
+                     <a href="./home.html" class="header-logo-link">
+                        <img src="./img/logo.jpg" alt="" />
+                     </a>
+                  </div>
+                  <div class="header-search">
+                     <input
+                        type="text"
+                        class="header-search-input"
+                        placeholder="Xu hướng tìm kiếm: Điện thoại, Sách, Chăn,.."
+                     />
 
-            <ul class="navbar__list">
-              <li class="navbar__item">
-                <a href="#" class="navbar__item-link">
-                  <i class="fas fa-home"></i>
-                  Home
-                </a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__item-link">
-                  <i class="far fa-comment-dots"></i>
-                  Chat
-                </a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__item-link">
-                  <i class="far fa-bell"></i>
-                  Thông Báo
-                </a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__item-link">
-                  <i class="far fa-question-circle"></i>
-                  Trợ giúp
-                </a>
-              </li>
-            </ul>
-          </div>
+                     <div class="header-search-content">
+                        <i class="fas fa-search"></i>
+                        <span></span>
+                     </div>
+                  </div>
 
-          <!--  SEARCH  -->
-          <div class="header__search">
-            <div class="search-wrapper">
-              <input
-                class="search-input"
-                type="text"
-                placeholder="Xu hướng tìm kiếm: Điện thoại, Sách, Chăn,..."
-              />
+                  <div class="header-support">
+                     <i class="fas fa-headphones-alt"></i>
+                     <div class="header-support-infor">
+                        <span>Hỗ trợ khách hàng</span>
+                        <span>0329881172</span>
+                     </div>
+                  </div>
 
-              <div class="search-content">
-                <i class="fas fa-search"></i>
-                <p></p>
-              </div>
-              <div class="search-icon">
-                <i class="fas fa-search"></i>
-                <span>Tìm kiếm</span>
-              </div>
+                  <div class="header-form">
+                     <a href="./dangki.html" class="header-form-login"
+                        >Đăng kí</a
+                     >
+                     <a href="./dangnhap.html" class="header-form-signup"
+                        >Đăng nhập</a
+                     >
+                  </div>
+                  <div class="header-cart">
+                     <a href="#" class="header-cart-link">
+                        <i class="fas fa-shopping-basket"></i>
+                     </a>
+                  </div>
+               </div>
             </div>
+         </header>
 
-            <div class="log-in">
-              <div class="logo-mobile">
-                <a href="#" class="logo-link logo-link-mobile">
-                  <span>
-                    <i class="fas fa-book"></i>
-                    CHỢ <br />
-                    ĐỒ CŨ
-                  </span>
-                </a>
-              </div>
-              <div class="search-btn-mobile">
-                <i class="fas fa-search"></i>
-              </div>
-              <a href="#" class="sign-up">LogUp</a>
-              <a href="#" class="sign-in">LogIn</a>
+         <div class="main">
+            <div class="container">
+               <div class="main__container">
+                  <div class="cart-title-mobile">
+                     <span>Giỏ hàng</span>
+                  </div>
+                  <ul class="cart-list"></ul>
+                  <div class="cart-total">
+                     <div class="cart-total-wrap">
+                        <span class="cart-total-title">Tổng thanh toán: </span>
+                        <span class="cart-total-money"></span>
+                     </div>
+                     <p class="cart-total-buy">Mua hàng</p>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
+         <footer class="footer" id="footer_id">
+            <div class="container">
+               <div class="footer-wrap">
+                  <div class="footer-main">
+                     <h1 class="footer-heading">VỀ CHÚNG TÔI</h1>
+                     <div class="footer-content">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>
+                           Khu II, đường 3/2 <br />
+                           phường Xuân Khánh, quận Ninh Kiều <br />
+                           thành phố Cần Thơ, Việt Nam
+                        </p>
+                     </div>
+                     <div class="footer-content">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>
+                           +84 123 456 789<br />
+                           +84 987 654 321
+                        </p>
+                     </div>
+                     <div class="footer-content">
+                        <i class="fas fa-envelope"></i>
+                        <p>ct18816dhct06@student.ctu.edu.vn</p>
+                     </div>
+                  </div>
+                  <div class="footer-main">
+                     <h1 class="footer-heading">CHÍNH SÁCH</h1>
+                     <div class="footer-content">
+                        <p>Chính sách bán hàng</p>
+                     </div>
+                     <div class="footer-content">
+                        <p>Chính sách đổi trả</p>
+                     </div>
+                     <div class="footer-content">
+                        <p>Chính sách bảo mật</p>
+                     </div>
+                     <div class="footer-content">
+                        <p>Điều khoản dịch vụ</p>
+                     </div>
+                  </div>
+                  <div class="footer-main">
+                     <h1 class="footer-heading">THÔNG TIN</h1>
+                     <div class="footer-content">
+                        <p>Hướng dẫn đặt hàng</p>
+                     </div>
+                     <div class="footer-content">
+                        <p>Hướng dẫn mua hàng</p>
+                     </div>
+                     <div class="footer-content">
+                        <p>Hướng dẫn hoàn trả</p>
+                     </div>
+                  </div>
+                  <div class="footer-main">
+                     <h1 class="footer-heading">Kết nối với chúng tôi</h1>
+                     <div class="footer-content">
+                        <i class="footer-icon-4 fab fa-facebook"></i>
+                        <p>Facebook</p>
+                     </div>
+                     <div class="footer-content">
+                        <i class="footer-icon-4 fab fa-linkedin"></i>
+                        <p>LinkedIn</p>
+                     </div>
+                     <div class="footer-content">
+                        <i class="footer-icon-4 fab fa-tiktok"></i>
+                        <p>Tiktok</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <div class="note">
+            <div class="container">
+               <p>© Bản quyền thuộc về CT18816-06</p>
+            </div>
+         </div>
       </div>
-    </header>
-
-    <div class="main">
-      <div class="container">
-        <div class="main__container">
-          <div class="cart-title-mobile">
-            <span>Giỏ hàng</span>
-          </div>
-          <ul class="note-list">
-            <li class="note-item">Đơn giá</li>
-            <li class="note-item">Số lượng</li>
-            <li class="note-item">Số Tiền</li>
-            <li class="note-item">Xóa</li>
-          </ul>
-          <ul class="cart-list">
-            <li class="cart-item">
-              <div class="cart-infor">
-                <img src="./img/asus1.jpg " alt="" class="cart-img" />
-                <span class="cart-name">
-                  Asus ZenBook UX325EA i5 1135G7 (KG363T)
-                </span>
-              </div>
-              <div class="cart-content">
-                <span class="cart-price">8.443.500 đ</span>
-                <div class="cart-count">
-                  <input type="button" class="cart-change minus" value="-" />
-                  <input
-                    type="number"
-                    class="cart-quanlity"
-                    value="1"
-                    max="10"
-                    min="0"
-                  />
-                  <input type="button" class="cart-change plus" value="+" />
-                </div>
-
-                <span class="cart-sum-price">100.000.000đ</span>
-              </div>
-              <button class="cart-delete">X</button>
-            </li>
-            <li class="cart-item">
-              <div class="cart-infor">
-                <img src="./img/asus1.jpg " alt="" class="cart-img" />
-                <span class="cart-name">
-                  Asus ZenBook UX325EA i5 1135G7 (KG363T)
-                </span>
-              </div>
-              <div class="cart-content">
-                <span class="cart-price">8.443.500 đ</span>
-                <div class="cart-count">
-                  <input type="button" class="cart-change minus" value="-" />
-                  <input
-                    type="number"
-                    class="cart-quanlity"
-                    value="1"
-                    max="10"
-                    min="0"
-                  />
-                  <input type="button" class="cart-change plus" value="+" />
-                </div>
-
-                <span class="cart-sum-price">100.000.000đ</span>
-              </div>
-              <button class="cart-delete">X</button>
-            </li>
-            <li class="cart-item">
-              <div class="cart-infor">
-                <img src="./img/asus1.jpg " alt="" class="cart-img" />
-                <span class="cart-name">
-                  Asus ZenBook UX325EA i5 1135G7 (KG363T)
-                </span>
-              </div>
-              <div class="cart-content">
-                <span class="cart-price">8.443.500 đ</span>
-                <div class="cart-count">
-                  <input type="button" class="cart-change minus" value="-" />
-                  <input
-                    type="number"
-                    class="cart-quanlity"
-                    value="1"
-                    max="10"
-                    min="0"
-                  />
-                  <input type="button" class="cart-change plus" value="+" />
-                </div>
-
-                <span class="cart-sum-price">100.000.000đ</span>
-              </div>
-              <button class="cart-delete">X</button>
-            </li>
-            <li class="cart-item">
-              <div class="cart-infor">
-                <img src="./img/asus1.jpg " alt="" class="cart-img" />
-                <span class="cart-name">
-                  Asus ZenBook UX325EA i5 1135G7 (KG363T)
-                </span>
-              </div>
-              <div class="cart-content">
-                <span class="cart-price">8.443.500 đ</span>
-                <div class="cart-count">
-                  <input type="button" class="cart-change minus" value="-" />
-                  <input
-                    type="number"
-                    class="cart-quanlity"
-                    value="1"
-                    max="10"
-                    min="0"
-                  />
-                  <input type="button" class="cart-change plus" value="+" />
-                </div>
-
-                <span class="cart-sum-price">100.000.000đ</span>
-              </div>
-              <button class="cart-delete">X</button>
-            </li>
-            <li class="cart-item">
-              <div class="cart-infor">
-                <img src="./img/asus1.jpg " alt="" class="cart-img" />
-                <span class="cart-name">
-                  Asus ZenBook UX325EA i5 1135G7 (KG363T)
-                </span>
-              </div>
-              <div class="cart-content">
-                <span class="cart-price">8.443.500 đ</span>
-                <div class="cart-count">
-                  <input type="button" class="cart-change minus" value="-" />
-                  <input
-                    type="number"
-                    class="cart-quanlity"
-                    value="1"
-                    max="10"
-                    min="0"
-                  />
-                  <input type="button" class="cart-change plus" value="+" />
-                </div>
-
-                <span class="cart-sum-price">100.000.000đ</span>
-              </div>
-              <button class="cart-delete">X</button>
-            </li>
-            <li class="cart-item">
-              <div class="cart-infor">
-                <img src="./img/asus1.jpg " alt="" class="cart-img" />
-                <span class="cart-name">
-                  Asus ZenBook UX325EA i5 1135G7 (KG363T)
-                </span>
-              </div>
-              <div class="cart-content">
-                <span class="cart-price">8.443.500 đ</span>
-                <div class="cart-count">
-                  <input type="button" class="cart-change minus" value="-" />
-                  <input
-                    type="number"
-                    class="cart-quanlity"
-                    value="1"
-                    max="10"
-                    min="0"
-                  />
-                  <input type="button" class="cart-change plus" value="+" />
-                </div>
-
-                <span class="cart-sum-price">100.000.000đ</span>
-              </div>
-              <button class="cart-delete">X</button>
-            </li>
-            <li class="cart-item">
-              <div class="cart-infor">
-                <img src="./img/asus1.jpg " alt="" class="cart-img" />
-                <span class="cart-name">
-                  Asus ZenBook UX325EA i5 1135G7 (KG363T)
-                </span>
-              </div>
-              <div class="cart-content">
-                <span class="cart-price">8.443.500 đ</span>
-                <div class="cart-count">
-                  <input type="button" class="cart-change minus" value="-" />
-                  <input
-                    type="number"
-                    class="cart-quanlity"
-                    value="1"
-                    max="10"
-                    min="0"
-                  />
-                  <input type="button" class="cart-change plus" value="+" />
-                </div>
-
-                <span class="cart-sum-price">100.000.000đ</span>
-              </div>
-              <button class="cart-delete">X</button>
-            </li>
-            <li class="cart-item">
-              <div class="cart-infor">
-                <img src="./img/asus1.jpg " alt="" class="cart-img" />
-                <span class="cart-name">
-                  Asus ZenBook UX325EA i5 1135G7 (KG363T)
-                </span>
-              </div>
-              <div class="cart-content">
-                <span class="cart-price">8.443.500 đ</span>
-                <div class="cart-count">
-                  <input type="button" class="cart-change minus" value="-" />
-                  <input
-                    type="number"
-                    class="cart-quanlity"
-                    value="1"
-                    max="10"
-                    min="0"
-                  />
-                  <input type="button" class="cart-change plus" value="+" />
-                </div>
-
-                <span class="cart-sum-price">100.000.000đ</span>
-              </div>
-              <button class="cart-delete">X</button>
-            </li>
-            <li class="cart-item">
-              <div class="cart-infor">
-                <img src="./img/asus1.jpg " alt="" class="cart-img" />
-                <span class="cart-name">
-                  Asus ZenBook UX325EA i5 1135G7 (KG363T)
-                </span>
-              </div>
-              <div class="cart-content">
-                <span class="cart-price">8.443.500 đ</span>
-                <div class="cart-count">
-                  <input type="button" class="cart-change minus" value="-" />
-                  <input
-                    type="number"
-                    class="cart-quanlity"
-                    value="1"
-                    max="10"
-                    min="0"
-                  />
-                  <input type="button" class="cart-change plus" value="+" />
-                </div>
-
-                <span class="cart-sum-price">100.000.000đ</span>
-              </div>
-              <button class="cart-delete">X</button>
-            </li>
-            <li class="cart-item">
-              <div class="cart-infor">
-                <img src="./img/asus1.jpg " alt="" class="cart-img" />
-                <span class="cart-name">
-                  Asus ZenBook UX325EA i5 1135G7 (KG363T)
-                </span>
-              </div>
-              <div class="cart-content">
-                <span class="cart-price">8.443.500 đ</span>
-                <div class="cart-count">
-                  <input type="button" class="cart-change minus" value="-" />
-                  <input
-                    type="number"
-                    class="cart-quanlity"
-                    value="1"
-                    max="10"
-                    min="0"
-                  />
-                  <input type="button" class="cart-change plus" value="+" />
-                </div>
-
-                <span class="cart-sum-price">100.000.000đ</span>
-              </div>
-              <button class="cart-delete">X</button>
-            </li>
-          </ul>
-          <div class="cart-total">
-            <div class="cart-total-wrap">
-              <span class="cart-total-title">Tổng thanh toán: </span>
-              <span class="cart-total-money">100.000đ</span>
-            </div>
-            <p class="cart-total-buy">Mua hàng</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer cart">
-      <div class="container">
-        <div class="footer-container">
-          <div class="footer-follow">
-            <h3>Kết nối với chúng tôi</h3>
-            <ul class="follow-list">
-              <li class="follow-item">
-                <i class="fab fa-facebook"></i>
-                <span class="follow-item-span">Facebook</span>
-              </li>
-              <li class="follow-item">
-                <i class="fab fa-linkedin"></i>
-                <span class="follow-item-span">LinkedIn</span>
-              </li>
-              <li class="follow-item">
-                <i class="fab fa-tiktok"></i>
-                <span class="follow-item-span">Tiktok</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-support">
-            <h3>Hỗ trợ</h3>
-            <ul class="support-list">
-              <li class="support-item">Về chúng tôi</li>
-              <li class="support-item">Quy định đăng tin</li>
-              <li class="support-item">Điều khoản sử dụng</li>
-              <li class="support-item">Mua bán an toàn</li>
-              <li class="support-item">Chăm sóc khách hàng</li>
-            </ul>
-          </div>
-
-          <div class="footer-contact">
-            <h3>Thông tin liên hệ</h3>
-            <div class="contact-address">
-              <i class="contact-icon fas fa-map-marker-alt"></i>
-              <p>
-                Khu II, đường 3/2 <br />
-                phường Xuân Khánh, quận Ninh Kiều <br />
-                thành phố Cần Thơ, Việt Nam
-              </p>
-            </div>
-            <div class="contact-phone">
-              <i class="contact-icon fas fa-phone-alt"></i>
-              <p>
-                +84 123 456 789<br />
-                +84 987 654 321
-              </p>
-            </div>
-            <div class="contact-mail">
-              <i class="contact-icon fas fa-envelope"></i>
-              <p>ct188dhct04@student.ctu.edu.vn</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
-  <script src="./js/main.js" type="text/javascript"></script>
+      <a class="return-home" href="#">
+         <i class="fa fa-angle-up"></i>
+      </a>
+   </body>
+   <script src="./js/main.js"></script>
+   <script src="./js/giohang.js"></script>
 </html>

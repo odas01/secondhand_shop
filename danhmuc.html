@@ -1,600 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/danhmuc.css" />
-    <link rel="stylesheet" href="./css/variable.css" />
-    <link rel="stylesheet" href="./css/grid.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap"
-      rel="stylesheet"
-    />
-    <title>Danh mục</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__container">
-          <!-- NAVBAR -->
-          <div class="header__navbar">
-            <div class="logo">
-              <a href="#" class="logo-link">
-                <span>
-                  <i class="fas fa-book"></i>
-                  CHỢ ĐỒ CŨ
-                </span>
-              </a>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./css/home.css" />
+      <link rel="stylesheet" href="./css/grid.css" />
+      <link rel="stylesheet" href="./css/danhmuc.css" />
+      <link rel="stylesheet" href="./css/variable.css" />
+      <link rel="stylesheet" href="./css/responsive.css" />
+      <!-- fontawesome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      />
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+         rel="stylesheet"
+      />
+      <title>DANH MỤC LAPTOP</title>
+   </head>
+   <body>
+      <div class="app">
+         <div class="dropdowns">
+            <div class="dropdow-overlay"></div>
+
+            <div class="dropdow-body">
+               <div class="dropdowns-form">
+                  <i class="far fa-user"></i>
+                  <div>
+                     <a href="">Đăng nhập</a>
+                     <a href="">Đăng kí</a>
+                  </div>
+               </div>
+               <div class="dropdowns-list">
+                  <a href="./home.html" class="dropdowns-item">Trang chủ</a>
+                  <a href="#!" class="dropdowns-item">Sản phẩm</a>
+                  <a href="#!" class="dropdowns-item">Bộ sưu tập</a>
+                  <a href="#footer_id" class="dropdowns-item">Liên hệ</a>
+               </div>
+
+               <div class="dropdowns-footer">
+                  <div class="dropdowns-footer-item">
+                     <i class="fas fa-phone"></i>
+                     <span>Gọi điện</span>
+                  </div>
+                  <div class="dropdowns-footer-item">
+                     <i class="fab fa-facebook-messenger"></i>
+                     <span>Nhắn tin</span>
+                  </div>
+               </div>
             </div>
+         </div>
+         <header class="header">
+            <div class="container">
+               <div class="header-navbar">
+                  <div class="menu-mobile">
+                     <div class="menu-mobile-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </div>
+                  </div>
+                  <div class="header-logo">
+                     <a href="./home.html" class="header-logo-link">
+                        <img src="./img/logo.jpg" alt="" />
+                     </a>
+                  </div>
+                  <div class="header-search">
+                     <input
+                        type="text"
+                        class="header-search-input"
+                        placeholder="Xu hướng tìm kiếm: Điện thoại, Sách, Chăn,.."
+                     />
 
-            <ul class="navbar__list">
-              <li class="navbar__item">
-                <a href="#" class="navbar__item-link">
-                  <i class="fas fa-home"></i>
-                  Home
-                </a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__item-link">
-                  <i class="far fa-comment-dots"></i>
-                  Chat
-                </a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__item-link">
-                  <i class="far fa-bell"></i>
-                  Thông Báo
-                </a>
-              </li>
-              <li class="navbar__item">
-                <a href="#" class="navbar__item-link">
-                  <i class="far fa-question-circle"></i>
-                  Trợ giúp
-                </a>
-              </li>
-            </ul>
-          </div>
+                     <div class="header-search-content">
+                        <i class="fas fa-search"></i>
+                        <span></span>
+                     </div>
+                  </div>
 
-          <!--  SEARCH  -->
-          <div class="header__search">
-            <div class="search-wrapper">
-              <input
-                class="search-input"
-                type="text"
-                placeholder="Xu hướng tìm kiếm: Điện thoại, Sách, Chăn,..."
-              />
+                  <div class="header-support">
+                     <i class="fas fa-headphones-alt"></i>
+                     <div class="header-support-infor">
+                        <span>Hỗ trợ khách hàng</span>
+                        <span>0329881172</span>
+                     </div>
+                  </div>
 
-              <div class="search-content">
-                <i class="fas fa-search"></i>
-                <p></p>
-              </div>
-              <div class="search-icon">
-                <i class="fas fa-search"></i>
-                <span>Tìm kiếm</span>
-              </div>
+                  <div class="header-form">
+                     <a href="./dangki.html" class="header-form-login"
+                        >Đăng kí</a
+                     >
+                     <a href="./dangnhap.html" class="header-form-signup"
+                        >Đăng nhập</a
+                     >
+                  </div>
+                  <div class="header-cart">
+                     <a href="#" class="header-cart-link">
+                        <i class="fas fa-shopping-basket"></i>
+                     </a>
+                  </div>
+               </div>
             </div>
+         </header>
 
-            <div class="log-in">
-              <div class="logo-mobile">
-                <a href="#" class="logo-link logo-link-mobile">
-                  <span>
-                    <i class="fas fa-book"></i>
-                    CHỢ <br />
-                    ĐỒ CŨ
-                  </span>
-                </a>
-              </div>
-              <div class="search-btn-mobile">
-                <i class="fas fa-search"></i>
-              </div>
-              <a href="#" class="sign-up">LogUp</a>
-              <a href="#" class="sign-in">LogIn</a>
+         <div class="main">
+            <div class="main-header">
+               <div class="container">
+                  <div class="main-header-list">
+                     <a href="./home.html" class="main-header-item"
+                        >Trang chủ</a
+                     >
+                     <a href="#" class="main-header-item">Sản phẩm </a>
+                     <a href="#" class="main-header-item">Bộ sưu tập</a>
+                     <a href="#footer_id" class="main-header-item">Liên hệ</a>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
+            <div class="container">
+               <div class="category-product row">
+                  <div class="product-colection col p-3 t-4 m-12">
+                     <div class="product-colection-wrap" id="price">
+                        <h1>MỨC GIÁ</h1>
+                        <div>
+                           <div class="product-colection-checkbox">
+                              <input name="price" type="radio" value="full" />
+                              <input
+                                 name="price"
+                                 type="radio"
+                                 value="10000000"
+                              />
+                              <input
+                                 name="price"
+                                 type="radio"
+                                 value="10000000-15000000"
+                              />
+                              <input
+                                 name="price"
+                                 type="radio"
+                                 value="15000000-20000000"
+                              />
+                              <input
+                                 name="price"
+                                 type="radio"
+                                 value="20000000-30000000"
+                              />
+                              <input
+                                 name="price"
+                                 type="radio"
+                                 value="30000000"
+                              />
+                           </div>
+                           <div class="product-colection-price">
+                              <span>Tất cả</span>
+                              <span>Giá dưới 10.000.000đ</span>
+                              <span>10.000.000đ - 15.000.000đ</span>
+                              <span>15.000.000đ - 20.000.000đ</span>
+                              <span>20.000.000đ - 30.000.000đ</span>
+                              <span>Giá trên 30.000.000đ</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="product-colection-wrap" id="name">
+                        <h1>LOẠI</h1>
+                        <div>
+                           <div class="product-colection-checkbox">
+                              <input name="name" type="radio" value="Asus" />
+                              <input name="name" type="radio" value="Acer" />
+                              <input name="name" type="radio" value="Lenovo" />
+                              <input name="name" type="radio" value="Dell" />
+                           </div>
+                           <div class="product-colection-name">
+                              <span>Asus</span>
+                              <span>Acer</span>
+                              <span>Lenovo</span>
+                              <span>Dell</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="product col p-9">
+                     <div class="pruduct-wrap" id="laptop">
+                        <h1 class="product-heading">Tất cả sản phẩm Laptop</h1>
+                        <div class="product-sort">
+                           <span
+                              >Sắp xếp:
+                              <div class="product-select-list">
+                                 <div class="product-select-wrap">
+                                    <span class="product-select-active"
+                                       >Tất cả
+                                    </span>
+                                    <i class="fa fa-angle-down"></i>
+                                    <div class="product-select-item--list">
+                                       <span
+                                          class="product-select-item--item"
+                                          id="tang"
+                                          >Giá tăng dần</span
+                                       >
+                                       <span
+                                          class="product-select-item--item"
+                                          id="giam"
+                                          >Giá giảm dần</span
+                                       >
+                                    </div>
+                                 </div>
+                              </div>
+                           </span>
+                           <div class="product-sort-list">
+                              <span class="product-sort-item">Tên A -> Z</span>
+                              <span class="product-sort-item">Tên A -> Z</span>
+                              <span class="product-sort-item">Tên A -> Z</span>
+                           </div>
+
+                           <p></p>
+                        </div>
+                        <div
+                           class="
+                              product-list product-list--category
+                              row row-mobile
+                           "
+                        >
+                           <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                              <img
+                                 class="product-img"
+                                 src="./img/asus1.jpg"
+                                 alt=""
+                              />
+                              <div class="product-content">
+                                 <p class="product-name">
+                                    Asus ZenBook UX325EA i5 1135G7 (KG363T)
+                                 </p>
+                                 <span class="product-price">23.790.000 đ</span>
+                                 <button class="product-buy">Thêm vào giỏ hàng</button>
+                              </div>
+                           </a>
+                           <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                              <img
+                                 class="product-img"
+                                 src="./img/asus2.jpg"
+                                 alt=""
+                              />
+
+                              <div class="product-content">
+                                 <p class="product-name">
+                                    Asus TUF Gaming FX506LH i5 10300H (HN002T)
+                                 </p>
+                                 <span class="product-price">21.690.000 đ</span>
+                                 <button class="product-buy">Thêm vào giỏ hàng</button>
+                              </div>
+                           </a>
+                           <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                              <img
+                                 class="product-img"
+                                 src="./img/asus3.jpg"
+                                 alt=""
+                              />
+
+                              <div class="product-content">
+                                 <p class="product-name">
+                                    Asus VivoBook A515EP i5 1135G7 (BN544T)
+                                 </p>
+                                 <span class="product-price">20.490.000 đ</span>
+                                 <button class="product-buy">Thêm vào giỏ hàng</button>
+                              </div>
+                           </a>
+                           <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                              <img
+                                 class="product-img"
+                                 src="./img/asus4.jpg"
+                                 alt=""
+                              />
+
+                              <div class="product-content">
+                                 <p class="product-name">
+                                    Asus TUF Gaming FX516PM i7 11370H (HN023T)
+                                 </p>
+                                 <span class="product-price">32.490.000 đ</span>
+                                 <button class="product-buy">Thêm vào giỏ hàng</button>
+                              </div>
+                           </a>
+                           <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                              <img
+                                 class="product-img"
+                                 src="./img/lnv1.jpg"
+                                 alt=""
+                              />
+
+                              <div class="product-content">
+                                 <p class="product-name">
+                                    Laptop Lenovo Yoga 7 14ACN6 R7
+                                    5800U/8GB/512GB/14.0"FHD/Win 10
+                                 </p>
+                                 <span class="product-price">26.999.000 đ</span>
+                                 <button class="product-buy">Thêm vào giỏ hàng</button>
+                              </div>
+                           </a>
+
+                           <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                              <img
+                                 class="product-img"
+                                 src="./img/dell3.jpg"
+                                 alt=""
+                              />
+
+                              <div class="product-content">
+                                 <p class="product-name">
+                                    Dell Vostro 3400 i7 1165G7 (V4I7015W)
+                                 </p>
+                                 <span class="product-price">25.490.000 đ</span>
+                                 <button class="product-buy">Thêm vào giỏ hàng</button>
+                              </div>
+                           </a>
+                           <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                              <img
+                                 class="product-img"
+                                 src="./img/dell4.jpg"
+                                 alt=""
+                              />
+
+                              <div class="product-content">
+                                 <p class="product-name">
+                                    Dell Inspiron 7306A i7 1165G7
+                                    (P125G002N7306A)
+                                 </p>
+                                 <span class="product-price">32.490.000 đ</span>
+                                 <button class="product-buy">Thêm vào giỏ hàng</button>
+                              </div> </a
+                           ><a
+                              href="#!"
+                              class="product-item col p-2-5 t-4 m-12"
+                           >
+                              <img
+                                 class="product-img"
+                                 src="./img/acer1.jpg"
+                                 alt=""
+                              />
+
+                              <div class="product-content">
+                                 <p class="product-name">
+                                    Acer Swift 3 SF313 53 518Y i5 1135G7
+                                    (NX.A4JSV.003)
+                                 </p>
+                                 <span class="product-price">22.790.000 đ</span>
+                                 <button class="product-buy">Thêm vào giỏ hàng</button>
+                              </div>
+                           </a>
+                           <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                              <img
+                                 class="product-img"
+                                 src="./img/acer2.jpg"
+                                 alt=""
+                              />
+
+                              <div class="product-content">
+                                 <p class="product-name">
+                                    Acer Aspire 3 A315 58 73DV i7 1165G7
+                                    (NX.ADDSV.007)
+                                 </p>
+                                 <span class="product-price">19.790.000 đ</span>
+                                 <button class="product-buy">Thêm vào giỏ hàng</button>
+                              </div> </a
+                           ><a
+                              href="#!"
+                              class="product-item col p-2-5 t-4 m-12"
+                           >
+                              <img
+                                 class="product-img"
+                                 src="./img/lnv1.jpg"
+                                 alt=""
+                              />
+
+                              <div class="product-content">
+                                 <p class="product-name">
+                                    Lenovo Yoga 7 14ITL5 i7 1165G7 (82BH00CKVN)
+                                 </p>
+                                 <span class="product-price">28.490.000 đ</span>
+                                 <button class="product-buy">Thêm vào giỏ hàng</button>
+                              </div>
+                           </a>
+                           <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                              <img
+                                 class="product-img"
+                                 src="./img/lnv2.jpg"
+                                 alt=""
+                              />
+
+                              <div class="product-content">
+                                 <p class="product-name">
+                                    Lenovo ThinkBook 14 G2 ITL i7 1165G7
+                                    (20VD003LVN)
+                                 </p>
+                                 <span class="product-price">21.490.000 đ</span>
+                                 <button class="product-buy">Thêm vào giỏ hàng</button>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer class="footer" id="footer_id">
+            <div class="container">
+               <div class="footer-wrap">
+                  <div class="footer-main">
+                     <h1 class="footer-heading">VỀ CHÚNG TÔI</h1>
+                     <div class="footer-content">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>
+                           Khu II, đường 3/2 <br />
+                           phường Xuân Khánh, quận Ninh Kiều <br />
+                           thành phố Cần Thơ, Việt Nam
+                        </p>
+                     </div>
+                     <div class="footer-content">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>
+                           +84 123 456 789<br />
+                           +84 987 654 321
+                        </p>
+                     </div>
+                     <div class="footer-content">
+                        <i class="fas fa-envelope"></i>
+                        <p>ct18816dhct06@student.ctu.edu.vn</p>
+                     </div>
+                  </div>
+                  <div class="footer-main">
+                     <h1 class="footer-heading">CHÍNH SÁCH</h1>
+                     <div class="footer-content">
+                        <p>Chính sách bán hàng</p>
+                     </div>
+                     <div class="footer-content">
+                        <p>Chính sách đổi trả</p>
+                     </div>
+                     <div class="footer-content">
+                        <p>Chính sách bảo mật</p>
+                     </div>
+                     <div class="footer-content">
+                        <p>Điều khoản dịch vụ</p>
+                     </div>
+                  </div>
+                  <div class="footer-main">
+                     <h1 class="footer-heading">THÔNG TIN</h1>
+                     <div class="footer-content">
+                        <p>Hướng dẫn đặt hàng</p>
+                     </div>
+                     <div class="footer-content">
+                        <p>Hướng dẫn mua hàng</p>
+                     </div>
+                     <div class="footer-content">
+                        <p>Hướng dẫn hoàn trả</p>
+                     </div>
+                  </div>
+                  <div class="footer-main">
+                     <h1 class="footer-heading">Kết nối với chúng tôi</h1>
+                     <div class="footer-content">
+                        <i class="footer-icon-4 fab fa-facebook"></i>
+                        <p>Facebook</p>
+                     </div>
+                     <div class="footer-content">
+                        <i class="footer-icon-4 fab fa-linkedin"></i>
+                        <p>LinkedIn</p>
+                     </div>
+                     <div class="footer-content">
+                        <i class="footer-icon-4 fab fa-tiktok"></i>
+                        <p>Tiktok</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <div class="note">
+            <div class="container">
+               <p>© Bản quyền thuộc về CT18816-06</p>
+            </div>
+         </div>
       </div>
-    </header>
-
-    <div class="main">
-      <div class="container">
-        <div class="main-container row">
-          <div class="menu col p-2">
-            <h4 class="menu-title">Danh mục sản phẩm</h4>
-            <div class="menu-wrapper">
-              <h4 class="menu-name">
-                <span>Laptop</span>
-                <i class="fas fa-chevron-down"></i>
-              </h4>
-              <ul class="menu-list">
-                <li class="menu-item">
-                  <i class="fas fa-chevron-right"></i>
-                  Dell
-                </li>
-                <li class="menu-item">
-                  <i class="fas fa-chevron-right"></i>
-                  Asus
-                </li>
-                <li class="menu-item">
-                  <i class="fas fa-chevron-right"></i>
-                  Acer
-                </li>
-                <li class="menu-item">
-                  <i class="fas fa-chevron-right"></i>
-                  Lenovo
-                </li>
-                <li class="menu-item">
-                  <i class="fas fa-chevron-right"></i>
-                  MSI
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="product-result col p-10">
-            <div class="product-result-name">
-              <h3>LAPTOP</h3>
-              <h4>104 kết quả tìm thấy</h4>
-            </div>
-            <div class="product-list row">
-              <!-- ASUS -->
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/asus1.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Asus ZenBook UX325EA i5 1135G7 (KG363T)
-                  </p>
-                  <span class="product-price">23.790.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/asus2.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Asus TUF Gaming FX506LH i5 10300H (HN002T)
-                  </p>
-                  <span class="product-price">21.690.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/asus3.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Asus VivoBook A515EP i5 1135G7 (BN544T)
-                  </p>
-                  <span class="product-price">20.490.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/asus4.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Asus TUF Gaming FX516PM i7 11370H (HN023T)
-                  </p>
-                  <span class="product-price">32.490.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-
-              <!-- DELL -->
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/dell1.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Dell Vostro 3500 i3 1115G4 (V5I3001W)
-                  </p>
-                  <span class="product-price">15.290.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/dell2.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Dell Vostro 3500 i5 1135G7 (P90F006CBL)
-                  </p>
-                  <span class="product-price">21.490.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/dell3.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Dell Vostro 3400 i7 1165G7 (V4I7015W)
-                  </p>
-                  <span class="product-price">225.490.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/dell4.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Dell Inspiron 7306A i7 1165G7 (P125G002N7306A)
-                  </p>
-                  <span class="product-price">32.490.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-
-              <!-- ACER -->
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/acer1.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Acer Swift 3 SF313 53 518Y i5 1135G7 (NX.A4JSV.003)
-                  </p>
-                  <span class="product-price">22.790.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/acer2.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Acer Aspire 3 A315 58 73DV i7 1165G7 (NX.ADDSV.007)
-                  </p>
-                  <span class="product-price">19.790.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/acer3.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Acer Aspire A514 54 53T8 i5 1135G7 (NX.A2ASV.006)
-                  </p>
-                  <span class="product-price">19.790.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/acer4.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Acer Aspire 3 A315 56 36YS i3 1005G1 (NX.HS5SV.008)
-                  </p>
-                  <span class="product-price">13.990.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-
-              <!-- LENOVO -->
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/lnv1.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Lenovo Yoga 7 14ITL5 i7 1165G7 (82BH00CKVN)
-                  </p>
-                  <span class="product-price">28.490.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/lnv2.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Lenovo ThinkBook 14 G2 ITL i7 1165G7 (20VD003LVN)
-                  </p>
-                  <span class="product-price">21.490.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/lnv3.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Lenovo ThinkBook 15 G2 ITL i5 1135G7 (20VE006YVN)
-                  </p>
-                  <span class="product-price">20.090.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/lnv4.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    Lenovo IdeaPad Slim 5 15ITL05 (82FG001PVN)
-                  </p>
-                  <span class="product-price">18.890.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-
-              <!-- MSI -->
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/msi1.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    MSI Modern 15 A11MU i5 1155G7 (680VN)
-                  </p>
-                  <span class="product-price">18.390.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/msi2.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    MSI Modern 14 B11MOU i3 1115G4 (849VN)
-                  </p>
-                  <span class="product-price">13.890.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/msi3.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">MSI Modern 14 B5M R5 5500U (063VN)</p>
-                  <span class="product-price">16.390.000₫ đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-              <a href="#" class="product-item col p-4 t-4 m-12">
-                <img
-                  class="product-img product-img--result"
-                  src="./img/msi4.jpg"
-                  alt=""
-                />
-
-                <div class="product-content">
-                  <p class="product-name">
-                    MSI Modern 14 B11MOL i3 1115G4 (813VN)
-                  </p>
-                  <span class="product-price">14.390.000 đ</span>
-                  <p class="product-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    thành phố Hồ Chí Minh
-                  </p>
-                  <button class="product-buy">Thêm vào giỏ</button>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-container">
-          <div class="footer-follow">
-            <h3>Kết nối với chúng tôi</h3>
-            <ul class="follow-list">
-              <li class="follow-item">
-                <i class="fab fa-facebook"></i>
-                <span class="follow-item-span">Facebook</span>
-              </li>
-              <li class="follow-item">
-                <i class="fab fa-linkedin"></i>
-                <span class="follow-item-span">LinkedIn</span>
-              </li>
-              <li class="follow-item">
-                <i class="fab fa-tiktok"></i>
-                <span class="follow-item-span">Tiktok</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-support">
-            <h3>Hỗ trợ</h3>
-            <ul class="support-list">
-              <li class="support-item">Về chúng tôi</li>
-              <li class="support-item">Quy định đăng tin</li>
-              <li class="support-item">Điều khoản sử dụng</li>
-              <li class="support-item">Mua bán an toàn</li>
-              <li class="support-item">Chăm sóc khách hàng</li>
-            </ul>
-          </div>
-
-          <div class="footer-contact">
-            <h3>Thông tin liên hệ</h3>
-            <div class="contact-address">
-              <i class="contact-icon fas fa-map-marker-alt"></i>
-              <p>
-                Khu II, đường 3/2 <br />
-                phường Xuân Khánh, quận Ninh Kiều <br />
-                thành phố Cần Thơ, Việt Nam
-              </p>
-            </div>
-            <div class="contact-phone">
-              <i class="contact-icon fas fa-phone-alt"></i>
-              <p>
-                +84 123 456 789<br />
-                +84 987 654 321
-              </p>
-            </div>
-            <div class="contact-mail">
-              <i class="contact-icon fas fa-envelope"></i>
-              <p>ct188dhct04@student.ctu.edu.vn</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
-  <script src="./js/main.js" type="text/javascript"></script>
+      <a class="return-home" href="#">
+         <i class="fa fa-angle-up"></i>
+      </a>
+   </body>
+   <script src="./js/main.js"></script>
+   <script src="./js/danhmuc.js"></script>
 </html>
