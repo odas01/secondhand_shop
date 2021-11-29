@@ -17,8 +17,10 @@
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
             rel="stylesheet"
         />
         <title>HOME</title>
@@ -59,58 +61,50 @@
             </div>
 
             <header class="header">
+                <div class="navbar">
+                    <div class="container">
+                        <div class="menu-mobile-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="navbar-content">
+                            <a href="" class="navbar-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span> Hotline: 0123456789 </span>
+                            </a>
+                            <a href="" class="navbar-item">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Trợ giúp</span>
+                            </a>
+                            <a href="" class="navbar-item">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Giỏ hàng</span>
+                            </a>
+                            <a href="./dangki.html" class="navbar-item">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Đăng kí</span>
+                            </a>
+                            <a href="./dangnhap.html" class="navbar-item">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Đăng nhập</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="container">
-                    <div class="header-navbar">
-                        <div class="menu-mobile">
-                            <div class="menu-mobile-icon">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="header-logo">
-                            <a href="./home1.html" class="header-logo-link">
-                                <img src="./img/logo.jpg" alt="" />
-                            </a>
-                        </div>
-                        <div class="header-search">
-                            <input
-                                type="text"
-                                class="header-search-input"
-                                placeholder="Xu hướng tìm kiếm: Điện thoại, Sách, Chăn,.."
-                            />
-
-                            <div class="header-search-content">
+                    <div class="search">
+                        <a href="home.html" class="logo">
+                            <img src="./img/logo.jpg" alt="" />
+                            <span>Chợ Đồ Cũ</span>
+                        </a>
+                        <div class="search-content">
+                            <input type="text" placeholder="Tìm kiếm" />
+                            <a href="home.html" class="search-icon">
                                 <i class="fas fa-search"></i>
-                                <span></span>
-                            </div>
-                        </div>
-
-                        <div class="header-support">
-                            <i class="fas fa-headphones-alt"></i>
-                            <div class="header-support-infor">
-                                <span>Hỗ trợ khách hàng</span>
-                                <span>0329881172</span>
-                            </div>
-                        </div>
-
-                        <div class="header-form">
-                            <a href="./dangki.html" class="header-form-login"
-                                >Đăng kí</a
-                            >
-                            <a href="./dangnhap.html" class="header-form-signup"
-                                >Đăng nhập</a
-                            >
-                        </div>
-                        <div class="header-cart">
-                            <a
-                                href="./giohang.html"
-                                class="header-cart-link"
-                                target="blank"
-                            >
-                                <i class="fas fa-shopping-basket"></i>
                             </a>
                         </div>
+                        <a href="./giohang.html" class="cart"> </a>
                     </div>
                 </div>
             </header>
@@ -129,40 +123,55 @@
                     </div>
                 </div>
 
-                
+                <div class="container slider">
+                    <div class="slider-left">
+                        <i class="fa fa-angle-left slider-prev"></i>
+                        <ul class="slider-dots">
+                            <li
+                                class="slider-dots-item active"
+                                data-index="0"
+                            ></li>
+                            <li class="slider-dots-item" data-index="1"></li>
+                            <li class="slider-dots-item" data-index="2"></li>
+                            <li class="slider-dots-item" data-index="3"></li>
+                            <li class="slider-dots-item" data-index="4"></li>
+                        </ul>
 
-            <div class="slider">
-                <i class="fa fa-angle-left slider-prev"></i>
-                <ul class="slider-dots">
-                    <li class="slider-dots-item active" data-index="0" ></li>
-                    <li class="slider-dots-item" data-index="1" ></li>
-                    <li class="slider-dots-item" data-index="2" ></li>
-                    <li class="slider-dots-item" data-index="3" ></li>
-                    <li class="slider-dots-item" data-index="4" ></li>
-                </ul>
+                        <div class="slider-wrapper">
+                            <div class="slider-main">
+                                <div class="slider-item">
+                                    <img src="./img/sidebar.webp" alt="" />
+                                </div>
+                                <div class="slider-item">
+                                    <img src="./img/slider1.jpg" alt="" />
+                                </div>
+                                <div class="slider-item">
+                                    <img src="./img/slider2.jpg" alt="" />
+                                </div>
 
-                <div class="slider-wrapper">
-                    <div class="slider-main">
-                        <div class="slider-item">
-                            <img src="./img/sidebar.webp" alt="" />
+                                <div class="slider-item">
+                                    <img src="./img/slider3.jpg" alt="" />
+                                </div>
+                                <div class="slider-item">
+                                    <img src="./img/slider4.jpg" alt="" />
+                                </div>
+                            </div>
                         </div>
-                        <div class="slider-item">
-                            <img src="./img/slider1.jpg" alt="" />
-                        </div>
-                        <div class="slider-item">
-                            <img src="./img/slider2.jpg" alt="" />
-                        </div>
-
-                        <div class="slider-item">
-                            <img src="./img/slider3.jpg" alt="" />
-                        </div>
-                        <div class="slider-item">
-                            <img src="./img/slider4.jpg" alt="" />
-                        </div>
+                        <i class="fa fa-angle-right slider-next"></i>
+                    </div>
+                    <div class="slider-right">
+                        <img
+                            class="slider-right-item"
+                            src="./img/slider5.jpg"
+                            alt=""
+                        />
+                        <img
+                            class="slider-right-item"
+                            src="./img/slider6.jpg"
+                            alt=""
+                        />
                     </div>
                 </div>
-                <i class="fa fa-angle-right slider-next"></i>
-            </div>
                 <div class="container">
                     <div class="category-list">
                         <div class="category-item">

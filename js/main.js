@@ -1,20 +1,4 @@
 'use strict';
-
-//Thanh tìm kiếm
-var inputElement = document.querySelector('.header-search-input');
-var inputContent = document.querySelector('.header-search-content span');
-var inputContentElement = document.querySelector('.header-search-content');
-inputElement.oninput = function (e) {
-   inputContent.innerHTML = `Tìm '${e.target.value}'`;
-   inputContentElement.style.display = 'flex';
-   if (!e.target.value) {
-      inputContentElement.style.display = 'none';
-   }
-};
-inputElement.onblur = function (e) {
-   inputContentElement.style.display = 'none';
-};
-
 //Dropdown
 var dropDownElement = document.querySelector('.dropdowns');
 var menuIconElement = document.querySelector('.menu-mobile-icon');
@@ -23,11 +7,12 @@ var html = document.querySelector('html');
 
 menuIconElement.onclick = function (e) {
    dropDownElement.style.display = 'block';
-   html.style.overflow = 'hiddent'
+   html.style.overflow = 'hidden'
 };
 
 dropDownOverlayElement.onclick = function (e) {
    dropDownElement.style.display = 'none';
+   html.style.overflow = 'unset'
 };
 
 

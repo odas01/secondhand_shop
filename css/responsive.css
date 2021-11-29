@@ -107,28 +107,23 @@
 
 /*  MOBILE  */
 @media (max-width: 739px) {
+   
    .container {
       width: 100%;
       margin: 0 auto;
    }
 
+   ::-webkit-scrollbar{
+      display: none;
+   }
+
    /* header */
    .header{
-      position: unset;
-      box-shadow: unset;
-   }
-
-   .header-navbar {
-      height: fit-content;
-      flex-wrap: wrap;
-   }
-
-   .menu-mobile {
-      display: block;
-      flex: 0 0 33.333%;
+      margin-bottom: 32px;
    }
 
    .menu-mobile-icon {
+      position: absolute;
       width: fit-content;
       padding: 8px;
    }
@@ -136,42 +131,45 @@
    .menu-mobile-icon span {
       display: block;
       width: 28px;
-      height: 6px;
-      background-color: rgb(41, 40, 40);
-      margin-top: 2px;
+      height: 4px;
+      background-color: var(--white-color);
+      margin-top: 4px;
       border-radius: 100rem;
       text-align: center;
    }
 
-   .header-logo {
-      flex: 0 0 33.333%;
+   .navbar-item{
+      padding: 12px 6px;
    }
 
-   .header-logo-link img {
-      height: 70px;
+   .navbar-item span{
+      font-size: 1.2rem;
    }
 
-   .header-search {
-      order: 1;
-      padding: 0;
-   }
-
-   .header-search-content {
-      width: 390px;
-   }
-   .header-support {
+   .navbar-item:nth-child(2),
+   .navbar-item:nth-child(4),
+   .navbar-item:nth-child(5){
       display: none;
    }
 
-   .header-form {
+   .search{
+      flex-direction: column;
+      padding: 0 8px;
+   }
+
+   .logo{
+      align-items: unset;
+      margin: 12px 0;
+   }
+   
+   .search-content{
+      width: 100%;
+   }
+
+   .cart{
       display: none;
    }
-
-   .header-cart {
-      flex: 0 0 33.333%;
-      padding-right: 12px;
-   }
-
+   
    /* body */
    .main{
       margin-top: 0;
@@ -182,20 +180,48 @@
    }
 
    .slider{
+      /* display: none; */
+      padding: 0 4px;
+      margin-bottom: 20px;
+   }
+
+   .slider-wrapper{
+      height: unset;
+   }
+
+   .slider-right{
       display: none;
    }
 
    .category-list {
-      display: none;
+      grid-template-columns: repeat(4, 1fr); 
+      grid-template-rows: repeat(2, 1fr);
+      gap: 16px 12px; 
+      margin-bottom: 40px;
    }
 
+   .category-item-link{
+      --category-item: 50px;
+   }
+
+   .category-item-icon{
+      font-size: 1.6rem;
+   }
+
+   .category-item-name{
+      font-size: 1.3rem;
+   }
+   
    .row-mobile {
       flex-wrap: nowrap;
    }
 
+   .pruduct-wrap{
+      padding: 0 8px;
+   }
+
    .product-list {
       overflow-x: scroll;
-      padding: 0 8px;
    }
 
    .product-heading {
