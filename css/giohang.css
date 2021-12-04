@@ -16,17 +16,20 @@ li {
    display: none;
 }
 
+.cart-list{
+   padding-left: 0;
+}
+
 .cart-item {
    height: 110px;
-   display: flex;
-   align-items: center;
+   display: grid;
+   grid-template-columns: 100px 1fr 50px;
    padding: 0 12px;
    border: 1px solid #e8e8e8;
    margin-bottom: 8px;
 }
 
 .cart-infor {
-   flex: 1;
    height: 100%;
    display: flex;
    align-items: center;
@@ -36,10 +39,10 @@ li {
    width: 80px;
    height: 80px;
    object-fit: contain;
+   margin-top: 12px;
 }
 
 .cart-name {
-   flex: 1;
    font-size: 1.6rem;
    margin-bottom: auto;
    line-height: 20px;
@@ -53,7 +56,6 @@ li {
 }
 
 .cart-content {
-   flex: 1;
    height: 100%;
    display: flex;
    align-items: center;
