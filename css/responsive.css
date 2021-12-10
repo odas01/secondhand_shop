@@ -5,6 +5,10 @@
         width: 984px;
         margin: 0 auto;
     }
+
+    .search-content{
+       width: 600px;
+    }
 }
 
 /* TABLET  */
@@ -121,7 +125,6 @@
     .cart {
         width: 40px;
         height: 40px;
-        background-size: cover;
         margin-left: 20px;
     }
 

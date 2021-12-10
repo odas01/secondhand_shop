@@ -140,7 +140,7 @@
    padding: 8px 12px 8px 16px;
    font-size: 1.3rem;
    width: 135px;
-   z-index: 999;
+   z-index: 1;
 }
 
 .product-select-item--item:hover {

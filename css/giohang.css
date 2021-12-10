@@ -7,7 +7,7 @@ li {
 }
 
 .no-product{
-   font-size: 4rem;
+   font-size: 3rem;
    text-align: center;
    margin: 20px 0 0;
 }
@@ -43,6 +43,7 @@ li {
 }
 
 .cart-name {
+   flex: 1;
    font-size: 1.6rem;
    margin-bottom: auto;
    line-height: 20px;

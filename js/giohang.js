@@ -1,6 +1,9 @@
+var $ = document.querySelector.bind(document);
+var $$ = document.querySelectorAll.bind(document);
+
 function stringToValue(string) {
     var result = string.split('').reverse();
-    var count = Number.parseInt(result.length / 3);
+    var count = parseInt(result.length / 3);
     var index = -1;
     while (count > 0) {
         index += 4;
@@ -16,26 +19,29 @@ function stringToValue(string) {
 
 function printMoney(element, price) {
     element.innerHTML = stringToValue(`${price}`) + 'đ';
-    var btnTotalBuy = document.querySelector('.cart-total-buy');
+    var btnTotalBuy = $('.cart-total-buy');
     btnTotalBuy.onclick = function () {
-        alert(
-            'Cảm ơn bạn đã mua hàng. Tổng tiền của bạn là: ' +
-                stringToValue(`${price}`) +
-                'đ'
-        );
+        if (!price) {
+            alert('Bạn chưa mua hàng');
+        } else {
+            alert(
+                'Cảm ơn bạn đã mua hàng. Tổng tiền của bạn là: ' +
+                    stringToValue(`${price}`) +
+                    'đ'
+            );
+        }
     };
 }
 
 //In sản phẩm
-var cartList = document.querySelector('.cart-list');
-var totalMoney = document.querySelector('.cart-total-money');
+var cartList = $('.cart-list');
+var totalMoney = $('.cart-total-money');
 var html = '';
 var sum = 0;
 for (var i = 0; i < 36; i++) {
     var cartItem = JSON.parse(localStorage.getItem(i));
     if (cartItem !== null) {
-        html += (
-            `<li class="cart-item" id="${i}">
+        html += `<li class="cart-item" id="${i}">
                 <img src="${cartItem.img}" alt="" class="cart-img" />
                 <div class="cart-content">
                     <span class="cart-name">${cartItem.name}</span>
@@ -52,10 +58,9 @@ for (var i = 0; i < 36; i++) {
                     <span class="cart-sum-price">${cartItem.price}</span>
                 </div>
                 <button class="cart-delete">X</button>
-            </li>`
-        );
+            </li>`;
         cartList.innerHTML = html;
-        sum += Number.parseInt(cartItem.price);
+        sum += parseInt(cartItem.price);
     }
 }
 printMoney(totalMoney, sum);
@@ -71,12 +76,11 @@ arrCartItems.forEach(function (cartItem) {
         var oldValue = e.target.value; //số lượng trước khi thay đổi
         cartQuanlity.onchange = function (e) {
             var newValue = e.target.value; //số lượng sau khi thay đổi
-            sum -= oldValue * Number.parseInt(cartPrice.innerHTML); //giảm giá về 0
+            sum -= oldValue * parseInt(cartPrice.innerHTML); //giảm giá về 0
             setTimeout(function () {
-                var price =
-                    e.target.value * Number.parseInt(cartPrice.innerHTML);
+                var price = e.target.value * parseInt(cartPrice.innerHTML);
                 cartSumPrice.innerHTML = price;
-                sum += e.target.value * Number.parseInt(cartPrice.innerHTML); //tăng giá với số lượng mới
+                sum += e.target.value * parseInt(cartPrice.innerHTML); //tăng giá với số lượng mới
                 printMoney(totalMoney, sum);
             }, 200);
         };
@@ -90,7 +94,7 @@ arrCartItems.forEach(function (cartItem) {
         //in ra giá sau khi xóa
         var cartPrice = cartItem.querySelector('.cart-price');
         var cartQuanlity = cartItem.querySelector('.cart-quanlity');
-        sum -= cartQuanlity.value * Number.parseInt(cartPrice.innerHTML);
+        sum -= cartQuanlity.value * parseInt(cartPrice.innerHTML);
         printMoney(totalMoney, sum);
 
         //xóa sản phẩm khỏi layout và localStorage

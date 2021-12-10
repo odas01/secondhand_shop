@@ -1,43 +1,43 @@
 'use strict';
+var $ = document.querySelector.bind(document);
+var $$ = document.querySelectorAll.bind(document);
 //Dropdown
-var dropDownElement = document.querySelector('.dropdowns');
-var menuIconElement = document.querySelector('.menu-mobile-icon');
-var dropDownOverlayElement = document.querySelector('.dropdow-overlay');
-var html = document.querySelector('html');
+var dropDownElement = $('.dropdowns');
+var dropDownBody = $('.dropdow-body');
+var menuIconElement = $('.menu-mobile-icon');
+var dropDownOverlayElement = $('.dropdow-overlay');
+var htmlElement = $('html');
 
-menuIconElement.onclick = function (e) {
-   dropDownElement.style.display = 'block';
-   html.style.overflow = 'hidden'
+menuIconElement.onclick = (e)=> {
+    dropDownElement.style.display = 'block';
+    dropDownBody.style.width = '300px'
+    htmlElement.style.overflow = 'hidden';
 };
 
-dropDownOverlayElement.onclick = function (e) {
-   dropDownElement.style.display = 'none';
-   html.style.overflow = 'unset'
+dropDownOverlayElement.onclick = (e)=> {
+    dropDownElement.style.display = 'none';
+    dropDownBody.style.width = '0'
+    htmlElement.style.overflow = 'unset';
 };
-
 
 //Return
 function scrollWindow() {
-   Object.assign(returnHomeElement.style, {
-      opacity: '1',
-      display: 'block',
-   });
+    Object.assign(returnHomeElement.style, {
+        opacity: '1',
+        display: 'block',
+    });
 }
 
-var returnHomeElement = document.querySelector('.return-home');
+var returnHomeElement = $('.return-home');
 window.addEventListener('scroll', scrollWindow);
-returnHomeElement.addEventListener('click', function (e) {
-   Object.assign(returnHomeElement.style, {
-      opacity: '0',
-      bottom: '100px',
-   });
-   window.removeEventListener('scroll', scrollWindow);
-   setTimeout(function () {
-      window.addEventListener('scroll', scrollWindow);
-      returnHomeElement.style.bottom = '55px';
-   }, 1500);
-})
-
-
-
-
+returnHomeElement.addEventListener('click', (e)=> {
+    Object.assign(returnHomeElement.style, {
+        opacity: '0',
+        bottom: '100px',
+    });
+    window.removeEventListener('scroll', scrollWindow);
+    setTimeout(() => {
+        window.addEventListener('scroll', scrollWindow);
+        returnHomeElement.style.bottom = '55px';
+    }, 1500);
+});

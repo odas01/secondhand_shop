@@ -1,5 +1,5 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
+var $ = document.querySelector.bind(document);
+var $$ = document.querySelectorAll.bind(document);
 window.addEventListener('load', slide);
 function slide() {
     var slider = $('.slider');
@@ -44,7 +44,6 @@ function slide() {
             positionX += width;
             sliderMain.style = `transform : translateX(${positionX}px)`;
         }
-        console.log(index);
         addActive(dotsItems[index]);
     }
 
