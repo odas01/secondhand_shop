@@ -1,13 +1,10 @@
-var $ = document.querySelector.bind(document);
-var $$ = document.querySelectorAll.bind(document);
-
-function stringToValue(string) {
+ function stringToValue(string) {
     var result = string.split('').reverse();
     var count = parseInt(result.length / 3);
     var index = -1;
     while (count > 0) {
         index += 4;
-        if (index === result.length) break;
+        if(index==result.length) break;
         for (var i = result.length - 1; i >= index; i--) {
             result[i + 1] = result[i];
         }
@@ -25,9 +22,8 @@ function printMoney(element, price) {
             alert('Bạn chưa mua hàng');
         } else {
             alert(
-                'Cảm ơn bạn đã mua hàng. Tổng tiền của bạn là: ' +
-                    stringToValue(`${price}`) +
-                    'đ'
+                'Thanh toán thành công. Tổng tiền của bạn là: ' +
+                    element.innerHTML
             );
         }
     };
@@ -75,14 +71,15 @@ arrCartItems.forEach(function (cartItem) {
     cartQuanlity.onmousedown = function (e) {
         var oldValue = e.target.value; //số lượng trước khi thay đổi
         cartQuanlity.onchange = function (e) {
-            var newValue = e.target.value; //số lượng sau khi thay đổi
             sum -= oldValue * parseInt(cartPrice.innerHTML); //giảm giá về 0
+            cartQuanlity.setAttribute('disabled', 'disabled');
             setTimeout(function () {
                 var price = e.target.value * parseInt(cartPrice.innerHTML);
                 cartSumPrice.innerHTML = price;
                 sum += e.target.value * parseInt(cartPrice.innerHTML); //tăng giá với số lượng mới
                 printMoney(totalMoney, sum);
-            }, 200);
+                cartQuanlity.removeAttribute('disabled');
+            }, 500);
         };
     };
 });
@@ -101,11 +98,16 @@ arrCartItems.forEach(function (cartItem) {
         e.target.parentElement.remove();
         var keyName = e.target.parentElement.getAttribute('id');
         localStorage.removeItem(keyName);
+        window.location.reload();
     };
 });
 
-if (!cartList.innerHTML) {
+if (!localStorage.length) {
     cartList.innerHTML = `<h2 class="no-product">
       KHÔNG CÓ SẢN PHẨM
    </h2>`;
 }
+
+window.addEventListener('storage', () => {
+    window.location.reload();
+});

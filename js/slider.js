@@ -1,5 +1,3 @@
-var $ = document.querySelector.bind(document);
-var $$ = document.querySelectorAll.bind(document);
 window.addEventListener('load', slide);
 function slide() {
     var slider = $('.slider');

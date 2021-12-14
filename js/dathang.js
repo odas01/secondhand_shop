@@ -18,12 +18,8 @@ arrProductItem.forEach((productItem, index) => {
         localStorage.setItem(index, JSON.stringify(objData));
         alert('Đã thêm vào giỏ hàng');
     };
-
-    var heartElement = productItem.querySelector('.product-heart');
-    var i = 0;
-    heartElement.onclick = (e) => {
-        // e.stopPropagation();
-        heartElement.style.color = (i++ % 2) == 0 ?'#eb4d4b' :'#95afc0';
-        console.log(i);
+    var heart = productItem.querySelector('.product-heart i');
+    heart.onclick = () => {
+        heart.classList.toggle('product-heart--active');
     };
 });

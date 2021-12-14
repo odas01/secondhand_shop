@@ -1,6 +1,3 @@
-var $ = document.querySelector.bind(document);
-var $$ = document.querySelectorAll.bind(document);
-
 var product = $('.product');
 var productArray = [];
 if (product) {
