@@ -64,5 +64,5 @@ function slide() {
 
     setInterval(() => {
         handleChangeSlider(1);
-    }, 3000);
+    }, 4000);
 }
