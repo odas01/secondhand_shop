@@ -6,12 +6,12 @@
         margin: 0 auto;
     }
 
-    .slider-left{
+    .slider-left {
         max-width: unset;
         width: 100%;
     }
 
-    .slider-right{
+    .slider-right {
         display: none;
     }
 }
@@ -59,7 +59,7 @@
         width: 50px;
     }
 
-    .slider{
+    .slider {
         gap: 0;
     }
 
@@ -137,63 +137,65 @@
         margin-left: 20px;
     }
 
-    .no-product{
-       font-size: 3rem;
+    .no-product {
+        font-size: 3rem;
     }
 
     /* CHI TIẾT */
-    .card{
+    .card {
         grid-template-columns: 360px 1fr;
     }
 
-    .img{
+    .img {
         width: 350px;
         height: 350px;
     }
 
-    .title{
+    .title {
         font-size: 24px;
     }
 
-    .price{
+    .price {
         font-size: 19px;
     }
 
-    .price span{
+    .price span {
         font-size: 15px;
     }
-    
-    .buy{
+
+    .buy {
         width: fit-content;
         height: 40px;
         font-size: 12px;
     }
 
-    .phone{
+    .phone {
         width: 100%;
         height: 30px;
     }
 
-    .phone div{
+    .phone div {
         font-size: 11px;
         line-height: 30px;
     }
 
-    .phone input{
+    .phone input {
         font-size: 13px;
     }
 
-    .like, .share{
+    .like,
+    .share {
         font-size: 11px;
         height: 28px;
     }
 
-    .like i, .share i{
+    .like i,
+    .share i {
         display: inline-block;
         margin-top: 1px;
     }
 
-    .detail-title h1{
+    .detail-title h1 {
         font-size: 18px;
     }
 }
@@ -255,7 +257,7 @@
         margin: 12px 0;
     }
 
-    .logo img{
+    .logo img {
         animation: unset;
     }
 
@@ -335,13 +337,13 @@
         display: block;
     }
 
-    .sale-box{
+    .sale-box {
         margin: 0 8px;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 8px;
     }
 
-    .sale-block{
+    .sale-block {
         padding: 12px;
         font-size: 16px;
     }
@@ -349,7 +351,7 @@
     /* footer */
     .footer {
         padding-top: 8px;
-        background-color:  #1e90ff;
+        background-color: #1e90ff;
         color: rgb(238, 238, 238);
     }
 
@@ -372,7 +374,7 @@
         font-size: 1rem;
     }
 
-    .footer-content i{
+    .footer-content i {
         margin-top: 0;
         margin-right: 7px;
     }
@@ -381,7 +383,7 @@
         margin-bottom: 2px;
     }
 
-    .return-home{
+    .return-home {
         right: 20px;
     }
 
@@ -414,100 +416,111 @@
     }
 
     /* GIỎ HÀNG */
-    .cart-item{
-       grid-template-columns: 70px 1fr 50px;
-       height: fit-content;
-       padding-bottom: 12px;
-       margin: 0 8px 8px 8px;
+    .cart-item {
+        grid-template-columns: 70px 1fr 50px;
+        height: fit-content;
+        padding-bottom: 12px;
+        margin: 0 8px 8px 8px;
     }
 
-    .cart-img{
-       width: 60px;
-       height: 60px;
+    .cart-img {
+        width: 60px;
+        height: 60px;
     }
 
-    .cart-content{
-      flex-direction: column;
-      align-items: flex-start;
-      padding-left: 12px;
-   }
-
-    .cart-name{
-      padding: 12px 0 0 0;
+    .cart-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 12px;
     }
 
-    .cart-price{
-       margin: 8px 0;
+    .cart-name {
+        padding: 12px 0 0 0;
     }
 
-    .cart-sum-price{
-       display: none;
+    .cart-price {
+        margin: 8px 0;
     }
 
-    .cart-total{
-       gap: 0 10px;
+    .cart-sum-price {
+        display: none;
     }
 
-    .cart-total-title{
-       font-size: 16px;
+    .cart-total {
+        gap: 0 10px;
     }
 
-    .cart-total-money{
-       font-size: 18px;
+    .cart-total-title {
+        font-size: 16px;
     }
 
-    .cart-total-buy{
-       width: 120px;
-       padding: 8px 0;
+    .cart-total-money {
+        font-size: 18px;
+    }
+
+    .cart-total-buy {
+        width: 120px;
+        padding: 8px 0;
     }
 
     /* CHI TIẾT */
-    .card{
+    .card {
         grid-template-columns: 1fr;
     }
 
-    .img{
+    .img {
         width: 100%;
-        height: 430px;
+        height: 340px;
+        grid-template-rows: 1fr;
     }
 
-    .img-main{
+    .img-main {
         pointer-events: none;
+        background: url(../img/chitiet.jpg) no-repeat center -160px;
+        background-size: cover;
+        z-index: 1;
+        border: none !important;
+        border-radius: 4px;
+        opacity: 1;
     }
 
-    .title{
+    .img-bottom{
+        display: none;
+    }
+
+    .title {
         font-size: 26px;
     }
 
-    .price{
+    .price {
         font-size: 20px;
     }
 
-    .price span{
-        font-size: 18px;    
+    .price span {
+        font-size: 18px;
     }
 
-    .phone{
+    .phone {
         height: 30px;
     }
 
-    .phone input{
+    .phone input {
         font-size: 12px;
         width: 200px;
     }
 
-    .phone div{
+    .phone div {
         font-size: 10px;
         width: auto;
         line-height: 30px;
         padding: 0 8px;
     }
 
-    .detail{
+    .detail {
         padding: 0 8px;
     }
 
-    .detail-title h1{
+    .detail-title h1 {
         font-size: 18px;
     }
 }
