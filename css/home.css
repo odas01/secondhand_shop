@@ -9,7 +9,6 @@ body {
 html {
     font-size: 62.5%;
     line-height: 1.5;
-    /* font-family: 'Poppins', sans-serif; */
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
@@ -21,8 +20,8 @@ html {
     margin: 0 auto;
 }
 
-/* HEADER */
-/* navbar */
+
+/* NAVBAR */
 .navbar {
     background-image: linear-gradient(#ff7f50, #f46164);
 }
@@ -48,11 +47,36 @@ html {
 .navbar-item span,
 .navbar-item i {
     font-size: 1.3rem;
-    color: var(--white-color);
+    color: #fff;
     padding-right: 6px;
 }
 
-/* search */
+.navbar-item-registration{
+    padding-top: 0;
+    padding-bottom: 0;
+    pointer-events:none;
+}
+
+.user-avt{
+    margin-right: 2px;
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px; 
+    border-radius: 100rem;
+}
+
+.navbar-item-registration .user-name{
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.navbar-item:nth-child(5) .icon-login{
+    position: relative;
+    top: 2px;
+}
+
+/* SEARCH */
 .search {
     display: flex;
     justify-content: space-between;
@@ -73,20 +97,6 @@ html {
     height: 104%;
     position: relative;
     animation: goLogo 3s ease-in-out infinite;
-}
-
-@keyframes goLogo {
-    0% {
-        left: 0;
-    }
-
-    50% {
-        left: 20px;
-    }
-
-    100% {
-        left: 0;
-    }
 }
 
 .logo span {
@@ -121,7 +131,7 @@ html {
 
 .search-icon i {
     font-size: 1.6rem;
-    color: var(--white-color);
+    color: #fff;
 }
 
 .cart {
@@ -134,7 +144,6 @@ html {
 }
 
 /* SLIDER */
-
 .slider {
     display: flex;
     padding: 20px 0;
@@ -205,7 +214,8 @@ html {
 }
 
 .slider-dots-item.active {
-    background-color: var(--white-color);
+    background-color: #fff;
+    border: 1px solid #000;
 }
 
 .slider-wrapper {
@@ -271,18 +281,7 @@ html {
     animation: go ease-in 9s infinite;
 }
 
-@keyframes go {
-    0% {
-        left: -213px;
-    }
-
-    100% {
-        left: 370px;
-    }
-}
-
 /* MAIN */
-
 .main-header {
     background-color: #2f3542;
 }
@@ -297,7 +296,7 @@ html {
     list-style: none;
     font-size: 1.8rem;
     line-height: 2rem;
-    color: var(--white-color);
+    color: #fff;
     padding: 17px 34px;
     cursor: pointer;
     text-decoration: none;
@@ -308,6 +307,7 @@ html {
     background-color: #018baa;
 }
 
+/* CATEGORY */
 .category-list {
     margin-top: 40px;
     display: grid;
@@ -338,7 +338,7 @@ html {
 }
 
 .category-item-link:hover {
-    background-color: var(--white-color);
+    background-color: #fff;
     border: 1px solid #0089ff;
 }
 
@@ -359,6 +359,7 @@ html {
     color: var(--text-color);
 }
 
+/* PRODUCT */
 .pruduct-wrap {
     padding-top: 35px;
     margin-bottom: 20px;
@@ -388,7 +389,7 @@ html {
     object-fit: contain;
     position: relative;
     top: 36px;
-    transition: top ease-in 0.3s;
+    transition: top ease-in 0.2s;
 }
 
 .product-item:hover .product-img {
@@ -401,7 +402,7 @@ html {
     background-color: #429a9d;
     text-align: center;
     font-size: 1.3rem;
-    color: var(--white-color);
+    color: #fff;
     margin-top: 16px;
     position: relative;
     transform: translateX(-110%);
@@ -507,7 +508,7 @@ html {
     font-size: 28px;
 }
 
-/* ---   FOOTER   --- */
+/* FOOTER */
 .footer {
     margin-top: 20px;
     background-color: #b2bec3;
@@ -564,6 +565,7 @@ html {
     cursor: pointer;
 }
 
+/* NOTE */
 .note {
     background-color: #f7f7f7;
 }
@@ -574,8 +576,7 @@ html {
     margin: 0;
 }
 
-/* Dropdow */
-
+/* DROPDOWS */
 .dropdowns {
     position: fixed;
     top: 0;
@@ -596,7 +597,7 @@ html {
 .dropdow-body {
     position: relative;
     height: 100%;
-    background-color: var(--white-color);
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     transition: width 3s linear;
@@ -613,7 +614,7 @@ html {
     width: 60px;
     font-size: 25px;
     text-align: center;
-    color: var(--white-color);
+    color: #fff;
 }
 
 .dropdowns-form div {
@@ -623,7 +624,7 @@ html {
 
 .dropdowns-form div a {
     text-decoration: none;
-    color: var(--white-color);
+    color: #fff;
 }
 
 .dropdowns-form div a:nth-child(1) {
@@ -669,6 +670,7 @@ html {
     margin-right: 8px;
 }
 
+/* ICON RETURN */
 .return-home {
     position: fixed;
     bottom: 55px;
@@ -680,7 +682,7 @@ html {
     display: none;
     text-decoration: none;
     z-index: 10;
-    box-shadow: 0 0 8px var(--white-color);
+    box-shadow: 0 0 8px #fff;
     animation: appear linear 0.5s;
     -webkit-tap-highlight-color: transparent;
     transition: bottom 0.5s, opacity 0.5s;

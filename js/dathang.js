@@ -18,6 +18,8 @@ arrProductItem.forEach((productItem, index) => {
         localStorage.setItem(index, JSON.stringify(objData));
         alert('Đã thêm vào giỏ hàng');
     };
+    
+    //icon tym
     var heart = productItem.querySelector('.product-heart i');
     heart.onclick = () => {
         heart.classList.toggle('product-heart--active');

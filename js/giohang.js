@@ -1,10 +1,10 @@
- function stringToValue(string) {
+function stringToValue(string) {
     var result = string.split('').reverse();
     var count = parseInt(result.length / 3);
     var index = -1;
     while (count > 0) {
         index += 4;
-        if(index==result.length) break;
+        if (index == result.length) break;
         for (var i = result.length - 1; i >= index; i--) {
             result[i + 1] = result[i];
         }
@@ -102,10 +102,19 @@ arrCartItems.forEach(function (cartItem) {
     };
 });
 
-if (!localStorage.length) {
+var cartTitle = $('.cart-title');
+if (localStorage.getItem('user')) {
+    if (localStorage.length == 1) {
+        cartList.innerHTML = `<h2 class="no-product">
+            GIỎ HÀNG TRỐNG
+       </h2>`;
+        cartTitle.style.display = 'none';
+    }
+} else if (!localStorage.length) {
     cartList.innerHTML = `<h2 class="no-product">
-      KHÔNG CÓ SẢN PHẨM
-   </h2>`;
+            GIỎ HÀNG TRỐNG
+       </h2>`;
+    cartTitle.style.display = 'none';
 }
 
 window.addEventListener('storage', () => {

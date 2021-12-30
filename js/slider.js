@@ -1,6 +1,5 @@
 window.addEventListener('load', slide);
 function slide() {
-    var slider = $('.slider');
     var sliderMain = $('.slider-main');
     var sliderItems = $$('.slider-item');
 
@@ -45,14 +44,14 @@ function slide() {
         addActive(dotsItems[index]);
     }
 
-    nextBtn.addEventListener('click', () =>{
+    nextBtn.addEventListener('click', () => {
         handleChangeSlider(1);
     });
-    prevBtn.addEventListener('click', () =>{
+    prevBtn.addEventListener('click', () => {
         handleChangeSlider(0);
     });
 
-    Array.from(dotsItems).forEach( (dotsItem) => {
+    Array.from(dotsItems).forEach((dotsItem) => {
         dotsItem.addEventListener('click', (e) => {
             addActive(dotsItem);
             var slideIndex = parseInt(e.target.dataset.index);

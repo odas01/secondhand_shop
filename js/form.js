@@ -46,13 +46,13 @@ function Validator(selector) {
         }
     }
 
-    //Chứa rule
     var formRules = {};
-    //Lấy ra form
     var formElement = $(selector);
     if (formElement) {
+        //lấy ra các thẻ chứa rule
         var inputs = formElement.querySelectorAll('[name][rules]');
         for (var input of inputs) {
+            //mảng chứa các rule của từng thẻ
             var rules = input.getAttribute('rules').split('|');
             for (var rule of rules) {
                 var ruleHasValue = rule.includes(':');
@@ -122,8 +122,22 @@ function Validator(selector) {
                 isErrorForm = true;
             }
         }
-        if (!isErrorForm) formElement.submit();
+        if (!isErrorForm) {
+            alert('Xác nhận thành công');
+            if (!localStorage.getItem('user')) {
+                localStorage.setItem('user', 'ADMIN');
+            }
+            formElement.submit();
+        }
     };
 }
+var aElements = $$('a');
+for(var aElement of aElements){
+    aElement.onclick = (e) => {
+        if (!localStorage.getItem('user')) {
+            localStorage.setItem('user', 'ADMIN');
+        }
+    }
+}
 
-Validator('form')
+Validator('form');

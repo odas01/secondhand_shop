@@ -1,11 +1,11 @@
-.main{
+.main {
    overflow: hidden;
 }
 
 /* Category */
 .category-product {
    margin-top: 20px;
-   background-color: var(--white-color);
+   background-color: #fff;
 }
 
 .product-colection {
@@ -52,7 +52,7 @@
    color: rgba(0, 0, 0, 0.4);
    margin-left: 8px;
 }
-/*  */
+
 .product {
    padding: 0 20px;
 }
@@ -131,7 +131,7 @@
    position: absolute;
    left: 0;
    top: 100%;
-   background-color: var(--white-color);
+   background-color: #fff;
    display: none;
 }
 

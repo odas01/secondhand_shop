@@ -1,6 +1,5 @@
 /* PC */
 @media (min-width: 1024px) and (max-width: 1239px) {
-    /* home */
     .container {
         width: 984px;
         margin: 0 auto;
@@ -18,12 +17,12 @@
 
 /* TABLET  */
 @media (min-width: 740px) and (max-width: 1023px) {
+    /* HOME */
     .container {
         max-width: 720px;
         margin: 0 auto;
     }
 
-    /* header */
     .header-logo {
         display: none;
     }
@@ -63,7 +62,6 @@
         gap: 0;
     }
 
-    /* body */
     .main-header-item {
         font-size: 1.6rem;
     }
@@ -90,7 +88,10 @@
         margin-bottom: 20px;
     }
 
-    /* footer */
+    .sale-block{
+        font-size: 12px;
+    }
+
     .footer-heading {
         font-size: 1.4rem;
         height: 38px;
@@ -118,6 +119,11 @@
     }
 
     /* GIỎ HÀNG */
+    .logo{
+        width: 170px;
+        height: 58px;
+    }
+
     .logo img {
         width: 60px;
         height: 60px;
@@ -125,6 +131,7 @@
 
     .logo span {
         font-size: 2rem;
+        margin-top: 16px;
     }
 
     .search-content {
@@ -143,12 +150,16 @@
 
     /* CHI TIẾT */
     .card {
-        grid-template-columns: 360px 1fr;
+        grid-template-columns: 1fr 2fr;
     }
 
     .img {
-        width: 350px;
-        height: 350px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .img-main.img-main-2{
+        background-position: center -90px;
     }
 
     .title {
@@ -170,7 +181,7 @@
     }
 
     .phone {
-        width: 100%;
+        width: 80%;
         height: 30px;
     }
 
@@ -202,6 +213,7 @@
 
 /*  MOBILE  */
 @media (max-width: 739px) {
+    /* HOME */
     .container {
         width: 100%;
         margin: 0 auto;
@@ -211,7 +223,6 @@
         display: none;
     }
 
-    /* header */
     .header {
         margin-bottom: 32px;
     }
@@ -226,7 +237,7 @@
         display: block;
         width: 28px;
         height: 4px;
-        background-color: var(--white-color);
+        background-color: #fff;
         margin-top: 4px;
         border-radius: 100rem;
         text-align: center;
@@ -269,7 +280,6 @@
         display: none;
     }
 
-    /* body */
     .main {
         margin-top: 0;
     }
@@ -279,7 +289,6 @@
     }
 
     .slider {
-        /* display: none; */
         padding: 0 4px;
         margin-bottom: 20px;
     }
@@ -321,18 +330,17 @@
 
     .product-list {
         overflow-x: scroll;
-        /* padding: 0 8px; */
     }
 
     .product-heading {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         margin-bottom: 12px;
         border: 1px solid;
         border-radius: 100rem;
         padding: 8px 12px;
         margin-left: 12px;
-        background-color: blueviolet;
-        color: var(--white-color);
+        background-color: #1e90ff;
+        color: #fff;
         width: fit-content;
         display: block;
     }
@@ -348,7 +356,6 @@
         font-size: 16px;
     }
 
-    /* footer */
     .footer {
         padding-top: 8px;
         background-color: #1e90ff;
@@ -416,6 +423,10 @@
     }
 
     /* GIỎ HÀNG */
+    .cart-title{
+        display: none;
+    }
+
     .cart-item {
         grid-template-columns: 70px 1fr 50px;
         height: fit-content;
@@ -476,7 +487,7 @@
 
     .img-main {
         pointer-events: none;
-        background: url(../img/chitiet.jpg) no-repeat center -160px;
+        background: url(../img/chitiet.jpg) no-repeat center -208px;
         background-size: cover;
         z-index: 1;
         border: none !important;
@@ -484,7 +495,7 @@
         opacity: 1;
     }
 
-    .img-bottom{
+    .img-bottom {
         display: none;
     }
 
@@ -523,4 +534,10 @@
     .detail-title h1 {
         font-size: 18px;
     }
+
+    /* FORM */
+    .form-header-name {
+        font-size: 12px;
+    }
+
 }
