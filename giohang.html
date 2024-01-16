@@ -1,221 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/home.css" />
-        <link rel="stylesheet" href="./css/grid.css" />
-        <link rel="stylesheet" href="./css/giohang.css" />
-        <link rel="stylesheet" href="./css/variable.css" />
-        <link rel="stylesheet" href="./css/responsive.css" />
 
-        <!-- font -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-            rel="stylesheet"
-        />
-        <title>GIỎ HÀNG</title>
-    </head>
-    <body>
-        <div class="app">
-            <div class="dropdowns">
-                <div class="dropdow-overlay"></div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/giohang.css" />
+    <link rel="stylesheet" href="./css/variable.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
 
-                <div class="dropdow-body">
-                    <div class="dropdowns-form">
-                        <i class="far fa-user"></i>
-                        <div>
-                            <a href="./dangnhap.html">Đăng nhập</a>
-                            <a href="./dangki.html">Đăng kí</a>
-                        </div>
-                    </div>
-                    <div class="dropdowns-list">
-                        <a href="./index.html" class="dropdowns-item"
-                            >Trang chủ</a
-                        >
-                        <a href="#!" class="dropdowns-item">Sản phẩm</a>
-                        <a href="#!" class="dropdowns-item">Bộ sưu tập</a>
-                        <a href="#footer_id" class="dropdowns-item">Liên hệ</a>
-                    </div>
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+    <title>Giỏ hàng</title>
+</head>
 
-                    <div class="dropdowns-footer">
-                        <div class="dropdowns-footer-item">
-                            <i class="fas fa-phone"></i>
-                            <span>Gọi điện</span>
-                        </div>
-                        <div class="dropdowns-footer-item">
-                            <i class="fab fa-facebook-messenger"></i>
-                            <span>Nhắn tin</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <header class="header">
-                <div class="navbar">
-                    <div class="container">
-                        <div class="menu-mobile-icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="navbar-content">
-                            <a href="" class="navbar-item">
-                                <i class="fas fa-phone-alt"></i>
-                                <span> Hotline: 0123456789 </span>
-                            </a>
-                            <a href="" class="navbar-item">
-                                <i class="fas fa-question-circle"></i>
-                                <span>Trợ giúp</span>
-                            </a>
-                            <a href="./giohang.html" class="navbar-item">
-                                <i class="fas fa-cart-plus"></i>
-                                <span>Giỏ hàng</span>
-                            </a>
-                            <a href="./dangki.html" class="navbar-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Đăng kí</span>
-                            </a>
-                            <a href="./dangnhap.html" class="navbar-item">
-                                <i class="fas fa-sign-in-alt"></i>
-                                <span>Đăng nhập</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="search">
-                        <a href="home.html" class="logo">
-                            <img src="./img/logo.jpg" alt="" />
-                            <span>Chợ Đồ Cũ</span>
-                        </a>
-                        <div class="search-content">
-                            <input type="text" placeholder="Tìm kiếm" />
-                            <a href="home.html" class="search-icon">
-                                <i class="fas fa-search"></i>
-                            </a>
-                        </div>
-                        <a href="./giohang.html" class="cart"> </a>
-                    </div>
-                </div>
-            </header>
+<body>
+    <div class="app">
+        <div class="dropdowns">
+            <div class="dropdow-overlay"></div>
 
-            <div class="main">
-                <div class="container">
-                    <div class="main__container">
-                        <div class="cart-title">
-                            <div></div>
-                            <div>
-                                <span></span>
-                                <span>ĐƠN GIÁ</span>
-                                <span>SỐ LƯỢNG</span>
-                                <span>TỔNG GIÁ</span>
-                            </div>
-                            <div></div>
-                        </div>
-                        <ul class="cart-list"></ul>
-                        <div class="cart-total">
-                            <div class="cart-total-wrap">
-                                <span class="cart-total-title"
-                                    >Tổng thanh toán:
-                                </span>
-                                <span class="cart-total-money"></span>
-                            </div>
-                            <p class="cart-total-buy">Mua hàng</p>
-                        </div>
+            <div class="dropdow-body">
+                <div class="dropdowns-form">
+                    <i class="far fa-user"></i>
+                    <div>
+                        <a href="./dangnhap.html">Đăng nhập</a>
+                        <a href="./dangki.html">Đăng kí</a>
                     </div>
                 </div>
-            </div>
-            <footer class="footer" id="footer_id">
-                <div class="container">
-                    <div class="footer-wrap">
-                        <div class="footer-main">
-                            <h1 class="footer-heading">VỀ CHÚNG TÔI</h1>
-                            <div class="footer-content">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p>
-                                    Khu II, đường 3/2 <br />
-                                    phường Xuân Khánh, quận Ninh Kiều <br />
-                                    thành phố Cần Thơ, Việt Nam
-                                </p>
-                            </div>
-                            <div class="footer-content">
-                                <i class="fas fa-phone-alt"></i>
-                                <p>
-                                    +84 123 456 789<br />
-                                    +84 987 654 321
-                                </p>
-                            </div>
-                            <div class="footer-content">
-                                <i class="fas fa-envelope"></i>
-                                <p>ct18816dhct06@student.ctu.edu.vn</p>
-                            </div>
-                        </div>
-                        <div class="footer-main">
-                            <h1 class="footer-heading">CHÍNH SÁCH</h1>
-                            <div class="footer-content">
-                                <p>Chính sách bán hàng</p>
-                            </div>
-                            <div class="footer-content">
-                                <p>Chính sách đổi trả</p>
-                            </div>
-                            <div class="footer-content">
-                                <p>Chính sách bảo mật</p>
-                            </div>
-                            <div class="footer-content">
-                                <p>Điều khoản dịch vụ</p>
-                            </div>
-                        </div>
-                        <div class="footer-main">
-                            <h1 class="footer-heading">THÔNG TIN</h1>
-                            <div class="footer-content">
-                                <p>Hướng dẫn đặt hàng</p>
-                            </div>
-                            <div class="footer-content">
-                                <p>Hướng dẫn mua hàng</p>
-                            </div>
-                            <div class="footer-content">
-                                <p>Hướng dẫn hoàn trả</p>
-                            </div>
-                        </div>
-                        <div class="footer-main">
-                            <h1 class="footer-heading">
-                                Kết nối với chúng tôi
-                            </h1>
-                            <div class="footer-content">
-                                <i class="footer-icon-4 fab fa-facebook"></i>
-                                <p>Facebook</p>
-                            </div>
-                            <div class="footer-content">
-                                <i class="footer-icon-4 fab fa-linkedin"></i>
-                                <p>LinkedIn</p>
-                            </div>
-                            <div class="footer-content">
-                                <i class="footer-icon-4 fab fa-tiktok"></i>
-                                <p>Tiktok</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="dropdowns-list">
+                    <a href="./index.html" class="dropdowns-item">Trang chủ</a>
+                    <a href="#!" class="dropdowns-item">Sản phẩm</a>
+                    <a href="#!" class="dropdowns-item">Bộ sưu tập</a>
+                    <a href="#footer_id" class="dropdowns-item">Liên hệ</a>
                 </div>
-            </footer>
-            <div class="note">
-                <div class="container">
-                    <p>© Bản quyền thuộc về CT18816-06</p>
+
+                <div class="dropdowns-footer">
+                    <div class="dropdowns-footer-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Gọi điện</span>
+                    </div>
+                    <div class="dropdowns-footer-item">
+                        <i class="fab fa-facebook-messenger"></i>
+                        <span>Nhắn tin</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <a class="return-home" href="#">
-            <i class="fa fa-angle-up"></i>
-        </a>
-    </body>
-    <script src="./js/main.js"></script>
-    <script src="./js/giohang.js"></script>
+        <header class="header">
+            <div class="navbar">
+                <div class="container">
+                    <div class="menu-mobile-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="navbar-content">
+                        <a href="" class="navbar-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span> Hotline: 0123456789 </span>
+                        </a>
+                        <a href="" class="navbar-item">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Trợ giúp</span>
+                        </a>
+                        <a href="./giohang.html" class="navbar-item">
+                            <i class="fas fa-cart-plus"></i>
+                            <span>Giỏ hàng</span>
+                        </a>
+                        <a href="./dangki.html" class="navbar-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Đăng kí</span>
+                        </a>
+                        <a href="./dangnhap.html" class="navbar-item">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span>Đăng nhập</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="search">
+                    <a href="" class="logo">
+                        <img src="./img/logo.jpg" alt="" />
+                        <span>Chợ Đồ Cũ</span>
+                    </a>
+                    <div class="search-content">
+                        <input type="text" placeholder="Tìm kiếm" />
+                        <a href="" class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                    <a href="./giohang.html" class="cart"> </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="container">
+                <div class="main__container">
+                    <div class="cart-title">
+                        <div></div>
+                        <div>
+                            <span></span>
+                            <span>ĐƠN GIÁ</span>
+                            <span>SỐ LƯỢNG</span>
+                            <span>TỔNG GIÁ</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <ul class="cart-list"></ul>
+                    <div class="cart-total">
+                        <div class="cart-total-wrap">
+                            <span class="cart-total-title">Tổng thanh toán:
+                            </span>
+                            <span class="cart-total-money"></span>
+                        </div>
+                        <p class="cart-total-buy">Mua hàng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer" id="footer_id">
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-main">
+                        <h1 class="footer-heading">VỀ CHÚNG TÔI</h1>
+                        <div class="footer-content">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>
+                                Khu II, đường 3/2 <br />
+                                phường Xuân Khánh, quận Ninh Kiều <br />
+                                thành phố Cần Thơ, Việt Nam
+                            </p>
+                        </div>
+                        <div class="footer-content">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>
+                                +84 123 456 789<br />
+                                +84 987 654 321
+                            </p>
+                        </div>
+                        <div class="footer-content">
+                            <i class="fas fa-envelope"></i>
+                            <p>ct18816dhct06@student.ctu.edu.vn</p>
+                        </div>
+                    </div>
+                    <div class="footer-main">
+                        <h1 class="footer-heading">CHÍNH SÁCH</h1>
+                        <div class="footer-content">
+                            <p>Chính sách bán hàng</p>
+                        </div>
+                        <div class="footer-content">
+                            <p>Chính sách đổi trả</p>
+                        </div>
+                        <div class="footer-content">
+                            <p>Chính sách bảo mật</p>
+                        </div>
+                        <div class="footer-content">
+                            <p>Điều khoản dịch vụ</p>
+                        </div>
+                    </div>
+                    <div class="footer-main">
+                        <h1 class="footer-heading">THÔNG TIN</h1>
+                        <div class="footer-content">
+                            <p>Hướng dẫn đặt hàng</p>
+                        </div>
+                        <div class="footer-content">
+                            <p>Hướng dẫn mua hàng</p>
+                        </div>
+                        <div class="footer-content">
+                            <p>Hướng dẫn hoàn trả</p>
+                        </div>
+                    </div>
+                    <div class="footer-main">
+                        <h1 class="footer-heading">
+                            Kết nối với chúng tôi
+                        </h1>
+                        <div class="footer-content">
+                            <i class="footer-icon-4 fab fa-facebook"></i>
+                            <p>Facebook</p>
+                        </div>
+                        <div class="footer-content">
+                            <i class="footer-icon-4 fab fa-linkedin"></i>
+                            <p>LinkedIn</p>
+                        </div>
+                        <div class="footer-content">
+                            <i class="footer-icon-4 fab fa-tiktok"></i>
+                            <p>Tiktok</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="note">
+            <div class="container">
+                <p>© Bản quyền thuộc về CT18816-06</p>
+            </div>
+        </div>
+    </div>
+    <a class="return-home" href="#">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/giohang.js"></script>
+
 </html>

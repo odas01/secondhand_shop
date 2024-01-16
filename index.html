@@ -1,620 +1,799 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- font -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-            rel="stylesheet"
-        />
 
-        <link rel="stylesheet" href="./css/home.css" />
-        <link rel="stylesheet" href="./css/grid.css" />
-        <link rel="stylesheet" href="./css/variable.css" />
-        <link rel="stylesheet" href="./css/responsive.css" />
-        <title>TRANG CHỦ</title>
-    </head>
-    <body>
-        <div class="app">
-            <div class="dropdowns">
-                <div class="dropdow-overlay"></div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="icon" href="./img/favicon.png">
 
-                <div class="dropdow-body">
-                    <div class="dropdowns-form">
-                        <i class="far fa-user"></i>
-                        <div>
-                            <a href="./dangnhap.html">Đăng nhập</a>
-                            <a href="./dangki.html">Đăng kí</a>
-                        </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/variable.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>Welcome to SecondHand Web</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="dropdowns">
+            <div class="dropdow-overlay"></div>
+
+            <div class="dropdow-body">
+                <div class="dropdowns-form">
+                    <i class="far fa-user"></i>
+                    <div>
+                        <a href="./dangnhap.html">Đăng nhập</a>
+                        <a href="./dangki.html">Đăng kí</a>
                     </div>
-                    <div class="dropdowns-list">
-                        <a href="./home.html" class="dropdowns-item"
-                            >Trang chủ</a
-                        >
-                        <a href="#!" class="dropdowns-item">Sản phẩm</a>
-                        <a href="#!" class="dropdowns-item">Bộ sưu tập</a>
-                        <a href="#footer_id" class="dropdowns-item">Liên hệ</a>
-                    </div>
+                </div>
+                <div class="dropdowns-list">
+                    <a href="./" class="dropdowns-item">Trang chủ</a>
+                    <a href="#!" class="dropdowns-item">Sản phẩm</a>
+                    <a href="#!" class="dropdowns-item">Bộ sưu tập</a>
+                    <a href="#footer_id" class="dropdowns-item">Liên hệ</a>
+                </div>
 
-                    <div class="dropdowns-footer">
-                        <div class="dropdowns-footer-item">
-                            <i class="fas fa-phone"></i>
-                            <span>Gọi điện</span>
-                        </div>
-                        <div class="dropdowns-footer-item">
-                            <i class="fab fa-facebook-messenger"></i>
-                            <span>Nhắn tin</span>
-                        </div>
+                <div class="dropdowns-footer">
+                    <div class="dropdowns-footer-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Gọi điện</span>
+                    </div>
+                    <div class="dropdowns-footer-item">
+                        <i class="fab fa-facebook-messenger"></i>
+                        <span>Nhắn tin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="navbar">
+                <div class="container">
+                    <div class="menu-mobile-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="navbar-content">
+                        <a href="" class="navbar-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span> Hotline: 0123456789 </span>
+                        </a>
+                        <a href="" class="navbar-item">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Trợ giúp</span>
+                        </a>
+                        <a href="./giohang.html" class="navbar-item">
+                            <i class="fas fa-cart-plus"></i>
+                            <span>Giỏ hàng</span>
+                        </a>
+                        <a href="./dangki.html" class="navbar-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Đăng kí</span>
+                        </a>
+                        <a href="./dangnhap.html" class="navbar-item">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span>Đăng nhập</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="search">
+                    <a href="" class="logo">
+                        <img src="./img/logo.jpg" alt="" />
+                        <span>Chợ Đồ Cũ</span>
+                    </a>
+                    <div class="search-content">
+                        <input type="text" placeholder="Tìm kiếm" />
+                        <a href="" class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                    <a href="./giohang.html" class="cart"> </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="main-header">
+                <div class="container">
+                    <div class="main-header-list">
+                        <a href="#" class="main-header-item">Trang chủ</a>
+                        <a href="#" class="main-header-item">Sản phẩm </a>
+                        <a href="#" class="main-header-item">Bộ sưu tập</a>
+                        <a href="#footer_id" class="main-header-item">Liên hệ</a>
                     </div>
                 </div>
             </div>
 
-            <header class="header">
-                <div class="navbar">
-                    <div class="container">
-                        <div class="menu-mobile-icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="navbar-content">
-                            <a href="" class="navbar-item">
-                                <i class="fas fa-phone-alt"></i>
-                                <span> Hotline: 0123456789 </span>
-                            </a>
-                            <a href="" class="navbar-item">
-                                <i class="fas fa-question-circle"></i>
-                                <span>Trợ giúp</span>
-                            </a>
-                            <a href="./giohang.html" class="navbar-item">
-                                <i class="fas fa-cart-plus"></i>
-                                <span>Giỏ hàng</span>
-                            </a>
-                            <a href="./dangki.html" class="navbar-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Đăng kí</span>
-                            </a>
-                            <a href="./dangnhap.html" class="navbar-item">
-                                <i class="fas fa-sign-in-alt"></i>
-                                <span>Đăng nhập</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="search">
-                        <a href="home.html" class="logo">
-                            <img src="./img/logo.jpg" alt="" />
-                            <span>Chợ Đồ Cũ</span>
-                        </a>
-                        <div class="search-content">
-                            <input type="text" placeholder="Tìm kiếm" />
-                            <a href="home.html" class="search-icon">
-                                <i class="fas fa-search"></i>
-                            </a>
-                        </div>
-                        <a href="./giohang.html" class="cart"> </a>
-                    </div>
-                </div>
-            </header>
+            <div class="container slider">
+                <div class="slider-left">
+                    <i class="fa fa-angle-left slider-prev"></i>
+                    <ul class="slider-dots">
+                        <li class="slider-dots-item active" data-index="0"></li>
+                        <li class="slider-dots-item" data-index="1"></li>
+                        <li class="slider-dots-item" data-index="2"></li>
+                        <li class="slider-dots-item" data-index="3"></li>
+                        <li class="slider-dots-item" data-index="4"></li>
+                    </ul>
 
-            <div class="main">
-                <div class="main-header">
-                    <div class="container">
-                        <div class="main-header-list">
-                            <a href="#" class="main-header-item">Trang chủ</a>
-                            <a href="#" class="main-header-item">Sản phẩm </a>
-                            <a href="#" class="main-header-item">Bộ sưu tập</a>
-                            <a href="#footer_id" class="main-header-item"
-                                >Liên hệ</a
-                            >
-                        </div>
-                    </div>
-                </div>
+                    <div class="slider-wrapper">
+                        <div class="slider-main">
+                            <div class="slider-item">
+                                <img src="./img/sidebar.webp" alt="" />
+                            </div>
+                            <div class="slider-item">
+                                <img src="./img/slider1.jpg" alt="" />
+                            </div>
+                            <div class="slider-item">
+                                <img src="./img/slider6.jpg" alt="" />
+                            </div>
 
-                <div class="container slider">
-                    <div class="slider-left">
-                        <i class="fa fa-angle-left slider-prev"></i>
-                        <ul class="slider-dots">
-                            <li
-                                class="slider-dots-item active"
-                                data-index="0"
-                            ></li>
-                            <li class="slider-dots-item" data-index="1"></li>
-                            <li class="slider-dots-item" data-index="2"></li>
-                            <li class="slider-dots-item" data-index="3"></li>
-                            <li class="slider-dots-item" data-index="4"></li>
-                        </ul>
-
-                        <div class="slider-wrapper">
-                            <div class="slider-main">
-                                <div class="slider-item">
-                                    <img src="./img/sidebar.webp" alt="" />
-                                </div>
-                                <div class="slider-item">
-                                    <img src="./img/slider1.jpg" alt="" />
-                                </div>
-                                <div class="slider-item">
-                                    <img src="./img/slider6.jpg" alt="" />
-                                </div>
-
-                                <div class="slider-item">
-                                    <img src="./img/slider3.jpg" alt="" />
-                                </div>
-                                <div class="slider-item">
-                                    <img src="./img/slider4.jpg" alt="" />
-                                </div>
+                            <div class="slider-item">
+                                <img src="./img/slider3.jpg" alt="" />
+                            </div>
+                            <div class="slider-item">
+                                <img src="./img/slider4.jpg" alt="" />
                             </div>
                         </div>
-                        <i class="fa fa-angle-right slider-next"></i>
                     </div>
-                    <div class="slider-right">
-                        <img
-                            class="slider-right-item"
-                            src="./img/slider5.jpg"
-                            alt=""
-                        />
-                        <div class="slider-right-item">
-                            <img src="./img/shipper.png" alt="" />
-                        </div>
+                    <i class="fa fa-angle-right slider-next"></i>
+                </div>
+                <div class="slider-right">
+                    <img class="slider-right-item" src="./img/slider5.jpg" alt="" />
+                    <div class="slider-right-item">
+                        <img src="./img/shipper.png" alt="" />
                     </div>
                 </div>
-                <div class="container">
-                    <div class="category-list">
-                        <div class="category-item">
-                            <a href="#!" class="category-item-link">
-                                <i class="category-item-icon fas fa-book"></i>
-                            </a>
-                            <span class="category-item-name">Sách cũ</span>
-                        </div>
-                        <div class="category-item">
-                            <a href="#!" class="category-item-link">
-                                <i
-                                    class="category-item-icon fa fa-mobile"
-                                    aria-hidden="true"
-                                ></i>
-                            </a>
-                            <span class="category-item-name">Điện thoại</span>
-                        </div>
-                        <div class="category-item">
-                            <a href="./danhmuc.html" class="category-item-link">
-                                <i class="category-item-icon fas fa-laptop"></i>
-                            </a>
-                            <span class="category-item-name">Laptop</span>
-                        </div>
-                        <div class="category-item">
-                            <a href="#!" class="category-item-link">
-                                <i
-                                    class="category-item-icon fas fa-keyboard"
-                                ></i>
-                            </a>
-                            <span class="category-item-name">Phụ kiện</span>
-                        </div>
+            </div>
+            <div class="container">
+                <div class="category-list">
+                    <div class="category-item">
+                        <a href="#!" class="category-item-link">
+                            <i class="category-item-icon fas fa-book"></i>
+                        </a>
+                        <span class="category-item-name">Sách cũ</span>
+                    </div>
+                    <div class="category-item">
+                        <a href="#!" class="category-item-link">
+                            <i class="category-item-icon fa fa-mobile" aria-hidden="true"></i>
+                        </a>
+                        <span class="category-item-name">Điện thoại</span>
+                    </div>
+                    <div class="category-item">
+                        <a href="./danhmuc.html" class="category-item-link">
+                            <i class="category-item-icon fas fa-laptop"></i>
+                        </a>
+                        <span class="category-item-name">Laptop</span>
+                    </div>
+                    <div class="category-item">
+                        <a href="#!" class="category-item-link">
+                            <i class="category-item-icon fas fa-keyboard"></i>
+                        </a>
+                        <span class="category-item-name">Phụ kiện</span>
+                    </div>
 
-                        <div class="category-item">
-                            <a href="#!" class="category-item-link">
-                                <i class="category-item-icon fas fa-chair"></i>
-                            </a>
-                            <span class="category-item-name">Gia dụng</span>
-                        </div>
-                        <div class="category-item">
-                            <a href="#shirt" class="category-item-link">
-                                <i class="category-item-icon fas fa-tshirt"></i>
-                            </a>
-                            <span class="category-item-name">Quần áo</span>
-                        </div>
-                        <div class="category-item">
-                            <a href="#!" class="category-item-link">
-                                <i
-                                    class="category-item-icon fas fa-motorcycle"
-                                ></i>
-                            </a>
-                            <span class="category-item-name">Xe cộ</span>
-                        </div>
-                        <div class="category-item">
-                            <a href="#!" class="category-item-link">
-                                <i
-                                    class="
+                    <div class="category-item">
+                        <a href="#!" class="category-item-link">
+                            <i class="category-item-icon fas fa-chair"></i>
+                        </a>
+                        <span class="category-item-name">Gia dụng</span>
+                    </div>
+                    <div class="category-item">
+                        <a href="#shirt" class="category-item-link">
+                            <i class="category-item-icon fas fa-tshirt"></i>
+                        </a>
+                        <span class="category-item-name">Quần áo</span>
+                    </div>
+                    <div class="category-item">
+                        <a href="#!" class="category-item-link">
+                            <i class="category-item-icon fas fa-motorcycle"></i>
+                        </a>
+                        <span class="category-item-name">Xe cộ</span>
+                    </div>
+                    <div class="category-item">
+                        <a href="#!" class="category-item-link">
+                            <i class="
                                         category-item-icon
                                         fas
                                         fa-chess-board
-                                    "
-                                ></i>
+                                    "></i>
+                        </a>
+                        <span class="category-item-name">Giải trí</span>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="pruduct-wrap" id="laptop">
+                        <a href="./danhmuc.html" class="product-heading">Laptop</a>
+                        <div class="product-list row row-mobile">
+                            <a href="./chitietsanpham.html" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/asus1.jpg" alt="" />
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Asus ZenBook UX325EA i5 1135G7
+                                        (KG363T)
+                                    </p>
+                                    <span class="product-price">
+                                        23.790.000 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
                             </a>
-                            <span class="category-item-name">Giải trí</span>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/asus2.jpg" alt="" />
+
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Asus TUF Gaming FX506LH i5 10300H
+                                        (HN002T)
+                                    </p>
+                                    <span class="product-price">
+                                        21.690.000 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/dell3.jpg" alt="" />
+
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Dell Vostro 3400 i7 1165G7
+                                        (V4I7015W)
+                                    </p>
+                                    <span class="product-price">
+                                        22.490.000 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/lnv1.jpg" alt="" />
+
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Lenovo Yoga 7 14ITL5 i7 1165G7
+                                        (82BH00CKVN)
+                                    </p>
+                                    <span class="product-price">
+                                        28.490.000 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/lnv2.jpg" alt="" />
+
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Lenovo ThinkBook 14 G2 ITL i7 1165G7
+                                        (20VD003LVN)
+                                    </p>
+                                    <span class="product-price">
+                                        21.490.000 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
                         </div>
                     </div>
+                    <div class="pruduct-wrap" id="smartphone">
+                        <a href="#!" class="product-heading">Điện thoại</a>
+                        <div class="product-list row row-mobile">
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/dt1.jpg" alt="" />
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Apple iPhone XS Max 64GB Cũ
+                                    </p>
+                                    <span class="product-price">
+                                        13.290.000 đ
 
-                    <div class="product">
-                        <div class="pruduct-wrap" id="laptop">
-                            <a href="./danhmuc.html" class="product-heading"
-                                >Laptop</a
-                            >
-                            <div class="product-list row row-mobile">
-                                <a
-                                    href="./chitietsanpham.html"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/asus1.jpg"
-                                        alt=""
-                                    />
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Asus ZenBook UX325EA i5 1135G7
-                                            (KG363T)
-                                        </p>
-                                        <span class="product-price">
-                                            23.790.000 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
                                         </span>
-                                    </div>
+                                    </span>
+                                </div>
 
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/asus2.jpg"
-                                        alt=""
-                                    />
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/dt2.jpg" alt="" />
 
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Asus TUF Gaming FX506LH i5 10300H
-                                            (HN002T)
-                                        </p>
-                                        <span class="product-price">
-                                            21.690.000 đ
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Apple iPhone 8 Plus 64GB cũ
+                                    </p>
+                                    <span class="product-price">
+                                        8.290.000 đ
 
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
                                         </span>
-                                    </div>
+                                    </span>
+                                </div>
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/dt3.webp" alt="" />
 
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        iPhone 11 Pro Max 64GB Cũ
+                                    </p>
+                                    <span class="product-price">
+                                        19.790.000 đ
 
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/dell3.jpg"
-                                        alt=""
-                                    />
-
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Dell Vostro 3400 i7 1165G7
-                                            (V4I7015W)
-                                        </p>
-                                        <span class="product-price">
-                                            22.490.000 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
                                         </span>
-                                    </div>
+                                    </span>
+                                </div>
 
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/lnv1.jpg"
-                                        alt=""
-                                    />
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/dt4.png" alt="" />
 
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Lenovo Yoga 7 14ITL5 i7 1165G7
-                                            (82BH00CKVN)
-                                        </p>
-                                        <span class="product-price">
-                                            28.490.000 đ
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Samsung Galaxy Note 10+ (Plus) - Cũ
+                                        đẹp
+                                    </p>
+                                    <span class="product-price">
+                                        10.990.000đ
 
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
                                         </span>
-                                    </div>
+                                    </span>
+                                </div>
 
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/lnv2.jpg"
-                                        alt=""
-                                    />
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/dt5.jpg" alt="" />
 
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Lenovo ThinkBook 14 G2 ITL i7 1165G7
-                                            (20VD003LVN)
-                                        </p>
-                                        <span class="product-price">
-                                            21.490.000 đ
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Samsung Galaxy Note 20 Ultra - Cũ
+                                        đẹp
+                                    </p>
+                                    <span class="product-price">
+                                        15.290.000 đ
 
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
                                         </span>
-                                    </div>
+                                    </span>
+                                </div>
 
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                            </div>
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/dt6.webp" alt="" />
+
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        iPhone 12 Pro Max 256GB Chính Hãng
+                                        (VN/A) - Đã kích hoạt
+                                    </p>
+                                    <span class="product-price">
+                                        29.690.000 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/dt7.jpg" alt="" />
+
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        iPhone 12 mini 128GB Chính hãng
+                                        (VN/A) - Đã kích hoạt
+                                    </p>
+                                    <span class="product-price">
+                                        16.190.000 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
                         </div>
-                        <div class="pruduct-wrap" id="smartphone">
-                            <a href="#!" class="product-heading">Điện thoại</a>
-                            <div class="product-list row row-mobile">
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/dt1.jpg"
-                                        alt=""
-                                    />
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Apple iPhone XS Max 64GB Cũ
-                                        </p>
-                                        <span class="product-price">
-                                            13.290.000 đ
+                    </div>
+                    <div class="pruduct-wrap" id="shirt">
+                        <a href="#!" class="product-heading">Áo thun</a>
+                        <div class="product-list row row-mobile">
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/ao1.jpg" alt="" />
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Áo thun dài tay Blinky - Pacman
+                                    </p>
+                                    <span class="product-price">
+                                        280.000 đ
 
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
                                         </span>
-                                    </div>
+                                    </span>
+                                </div>
 
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/dt2.jpg"
-                                        alt=""
-                                    />
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/ao2.jpg" alt="" />
 
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Apple iPhone 8 Plus 64GB cũ
-                                        </p>
-                                        <span class="product-price">
-                                            8.290.000 đ
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Áo thun dài tay God of War - Phiên
+                                        bản chó Pug
+                                    </p>
+                                    <span class="product-price">
+                                        280.000 đ
 
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
                                         </span>
-                                    </div>
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/dt3.webp"
-                                        alt=""
-                                    />
+                                    </span>
+                                </div>
 
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            iPhone 11 Pro Max 64GB Cũ
-                                        </p>
-                                        <span class="product-price">
-                                            19.790.000 đ
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/ao3.jpg" alt="" />
 
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Áo thun dài tay Blazing Bull -
+                                        Sekiro Emblem Collection
+                                    </p>
+                                    <span class="product-price">
+                                        280.000 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
                                         </span>
-                                    </div>
+                                    </span>
+                                </div>
 
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/dt4.png"
-                                        alt=""
-                                    />
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/ao4.jpg" alt="" />
 
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Samsung Galaxy Note 10+ (Plus) - Cũ
-                                            đẹp
-                                        </p>
-                                        <span class="product-price">
-                                            10.990.000đ
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Áo thun dài tay Contra 2.0
+                                    </p>
+                                    <span class="product-price">
+                                        280.000 đ
 
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
                                         </span>
-                                    </div>
+                                    </span>
+                                </div>
 
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/dt5.jpg"
-                                        alt=""
-                                    />
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/ao5.jpg" alt="" />
 
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Samsung Galaxy Note 20 Ultra - Cũ
-                                            đẹp
-                                        </p>
-                                        <span class="product-price">
-                                            15.290.000 đ
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Áo thun dài tay Mario Game Over
+                                    </p>
+                                    <span class="product-price">
+                                        280.000 đ
 
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
                                         </span>
-                                    </div>
+                                    </span>
+                                </div>
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
 
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/ao7.jpg" alt="" />
 
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/dt6.webp"
-                                        alt=""
-                                    />
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Áo thun dài tay Marvel's Spider-Man:
+                                        Miles Morales
+                                    </p>
+                                    <span class="product-price">
+                                        280.000 đ
 
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            iPhone 12 Pro Max 256GB Chính Hãng
-                                            (VN/A) - Đã kích hoạt
-                                        </p>
-                                        <span class="product-price">
-                                            29.690.000 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
                                         </span>
-                                    </div>
+                                    </span>
+                                </div>
 
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/dt7.jpg"
-                                        alt=""
-                                    />
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/ao8.jpg" alt="" />
 
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            iPhone 12 mini 128GB Chính hãng
-                                            (VN/A) - Đã kích hoạt
-                                        </p>
-                                        <span class="product-price">
-                                            16.190.000 đ
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Áo thun dài tay The Legend of Zelda
+                                        - Phiên bản chó Shiba
+                                    </p>
+                                    <span class="product-price">
+                                        280.000 đ
 
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
                                         </span>
-                                    </div>
+                                    </span>
+                                </div>
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/ao9.jpg" alt="" />
 
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                            </div>
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Áo thun dài tay Assassin's Creed
+                                        Valhalla
+                                    </p>
+                                    <span class="product-price">
+                                        280.000 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/ao10.jpg" alt="" />
+
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Áo thun dài tay Kratos - God of War
+                                    </p>
+                                    <span class="product-price">
+                                        280.000 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
                         </div>
-                        <div class="pruduct-wrap" id="shirt">
-                            <a href="#!" class="product-heading">Áo thun</a>
-                            <div class="product-list row row-mobile">
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/ao1.jpg"
-                                        alt=""
-                                    />
+                    </div>
+                    <div class="pruduct-wrap" id="book">
+                        <h1 class="product-heading">Truyện cũ</h1>
+                        <div class="product-list row row-mobile">
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/sach1.webp" alt="" />
+
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Cho Tôi Xin Một Vé Đi Tuổi Thơ
+                                    </p>
+                                    <span class="product-price">
+                                        64.000 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/sach2.webp" alt="" />
+
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">Tôi Là Bêtô</p>
+                                    <span class="product-price">
+                                        61.750 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/sach3.webp" alt="" />
+
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Có Hai Con Mèo Ngồi Bên Cửa Sổ
+                                    </p>
+                                    <span class="product-price">
+                                        59.500 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/sach5.webp" alt="" />
+
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Ngôi Trường Mọi Khi
+                                    </p>
+                                    <span class="product-price">
+                                        50.400 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                            </a>
+                            <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                <img class="product-img" src="./img/sach6.webp" alt="" />
+
+                                <div class="product-more">Xem thêm</div>
+                                <div class="product-content">
+                                    <p class="product-name">
+                                        Lá Nằm Trong Lá
+                                    </p>
+                                    <span class="product-price">
+                                        56.000 đ
+
+                                        <span class="product-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-buy">
+                                    Thêm vào giỏ hàng
+                                </div>
+                                <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                    <img class="product-img" src="./img/sach7.webp" alt="" />
                                     <div class="product-more">Xem thêm</div>
                                     <div class="product-content">
                                         <p class="product-name">
-                                            Áo thun dài tay Blinky - Pacman
+                                            Những Chàng Trai Xấu Tính
                                         </p>
                                         <span class="product-price">
-                                            280.000 đ
+                                            35.000 đ
 
                                             <span class="product-heart">
                                                 <i class="fas fa-heart"></i>
@@ -623,336 +802,35 @@
                                     </div>
 
                                     <div class="product-buy">
-                                        <div></div>
+                                        Thêm vào giỏ hàng
                                     </div>
                                 </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/ao2.jpg"
-                                        alt=""
-                                    />
+                                <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                    <img class="product-img" src="./img/sach8.webp" alt="" />
+
+                                    <div class="product-more">Xem thêm</div>
+                                    <div class="product-content">
+                                        <p class="product-name">Mắt Biếc</p>
+                                        <span class="product-price">
+                                            68.500 đ
+
+                                            <span class="product-heart">
+                                                <i class="fas fa-heart"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+
+                                    <div class="product-buy">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </a>
+                                <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                    <img class="product-img" src="./img/sach9.webp" alt="" />
 
                                     <div class="product-more">Xem thêm</div>
                                     <div class="product-content">
                                         <p class="product-name">
-                                            Áo thun dài tay God of War - Phiên
-                                            bản chó Pug
-                                        </p>
-                                        <span class="product-price">
-                                            280.000 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/ao3.jpg"
-                                        alt=""
-                                    />
-
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Áo thun dài tay Blazing Bull -
-                                            Sekiro Emblem Collection
-                                        </p>
-                                        <span class="product-price">
-                                            280.000 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/ao4.jpg"
-                                        alt=""
-                                    />
-
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Áo thun dài tay Contra 2.0
-                                        </p>
-                                        <span class="product-price">
-                                            280.000 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/ao5.jpg"
-                                        alt=""
-                                    />
-
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Áo thun dài tay Mario Game Over
-                                        </p>
-                                        <span class="product-price">
-                                            280.000 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/ao7.jpg"
-                                        alt=""
-                                    />
-
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Áo thun dài tay Marvel's Spider-Man:
-                                            Miles Morales
-                                        </p>
-                                        <span class="product-price">
-                                            280.000 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/ao8.jpg"
-                                        alt=""
-                                    />
-
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Áo thun dài tay The Legend of Zelda
-                                            - Phiên bản chó Shiba
-                                        </p>
-                                        <span class="product-price">
-                                            280.000 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/ao9.jpg"
-                                        alt=""
-                                    />
-
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Áo thun dài tay Assassin's Creed
-                                            Valhalla
-                                        </p>
-                                        <span class="product-price">
-                                            280.000 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/ao10.jpg"
-                                        alt=""
-                                    />
-
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Áo thun dài tay Kratos - God of War
-                                        </p>
-                                        <span class="product-price">
-                                            280.000 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="pruduct-wrap" id="book">
-                            <h1 class="product-heading">Truyện cũ</h1>
-                            <div class="product-list row row-mobile">
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/sach1.webp"
-                                        alt=""
-                                    />
-
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Cho Tôi Xin Một Vé Đi Tuổi Thơ
-                                        </p>
-                                        <span class="product-price">
-                                            64.000 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/sach2.webp"
-                                        alt=""
-                                    />
-
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">Tôi Là Bêtô</p>
-                                        <span class="product-price">
-                                            61.750 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/sach3.webp"
-                                        alt=""
-                                    />
-
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Có Hai Con Mèo Ngồi Bên Cửa Sổ
-                                        </p>
-                                        <span class="product-price">
-                                            59.500 đ
-
-                                            <span class="product-heart">
-                                                <i class="fas fa-heart"></i>
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="product-buy">
-                                        <div></div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/sach5.webp"
-                                        alt=""
-                                    />
-
-                                    <div class="product-more">Xem thêm</div>
-                                    <div class="product-content">
-                                        <p class="product-name">
-                                            Ngôi Trường Mọi Khi
+                                            Sương Khói Quê Nhà
                                         </p>
                                         <span class="product-price">
                                             50.400 đ
@@ -964,26 +842,17 @@
                                     </div>
 
                                     <div class="product-buy">
-                                        <div></div>
+                                        Thêm vào giỏ hàng
                                     </div>
                                 </a>
-                                <a
-                                    href="#!"
-                                    class="product-item col p-2-5 t-4 m-12"
-                                >
-                                    <img
-                                        class="product-img"
-                                        src="./img/sach6.webp"
-                                        alt=""
-                                    />
+                                <a href="#!" class="product-item col p-2-5 t-4 m-12">
+                                    <img class="product-img" src="./img/sach10.webp" alt="" />
 
                                     <div class="product-more">Xem thêm</div>
                                     <div class="product-content">
-                                        <p class="product-name">
-                                            Lá Nằm Trong Lá
-                                        </p>
+                                        <p class="product-name">Hạ Đỏ</p>
                                         <span class="product-price">
-                                            56.000 đ
+                                            42.000 đ
 
                                             <span class="product-heart">
                                                 <i class="fas fa-heart"></i>
@@ -992,227 +861,122 @@
                                     </div>
 
                                     <div class="product-buy">
-                                        <div></div>
+                                        Thêm vào giỏ hàng
                                     </div>
-                                    <a
-                                        href="#!"
-                                        class="product-item col p-2-5 t-4 m-12"
-                                    >
-                                        <img
-                                            class="product-img"
-                                            src="./img/sach7.webp"
-                                            alt=""
-                                        />
-                                        <div class="product-more">Xem thêm</div>
-                                        <div class="product-content">
-                                            <p class="product-name">
-                                                Những Chàng Trai Xấu Tính
-                                            </p>
-                                            <span class="product-price">
-                                                35.000 đ
-
-                                                <span class="product-heart">
-                                                    <i class="fas fa-heart"></i>
-                                                </span>
-                                            </span>
-                                        </div>
-
-                                        <div class="product-buy">
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                    <a
-                                        href="#!"
-                                        class="product-item col p-2-5 t-4 m-12"
-                                    >
-                                        <img
-                                            class="product-img"
-                                            src="./img/sach8.webp"
-                                            alt=""
-                                        />
-
-                                        <div class="product-more">Xem thêm</div>
-                                        <div class="product-content">
-                                            <p class="product-name">Mắt Biếc</p>
-                                            <span class="product-price">
-                                                68.500 đ
-
-                                                <span class="product-heart">
-                                                    <i class="fas fa-heart"></i>
-                                                </span>
-                                            </span>
-                                        </div>
-
-                                        <div class="product-buy">
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                    <a
-                                        href="#!"
-                                        class="product-item col p-2-5 t-4 m-12"
-                                    >
-                                        <img
-                                            class="product-img"
-                                            src="./img/sach9.webp"
-                                            alt=""
-                                        />
-
-                                        <div class="product-more">Xem thêm</div>
-                                        <div class="product-content">
-                                            <p class="product-name">
-                                                Sương Khói Quê Nhà
-                                            </p>
-                                            <span class="product-price">
-                                                50.400 đ
-
-                                                <span class="product-heart">
-                                                    <i class="fas fa-heart"></i>
-                                                </span>
-                                            </span>
-                                        </div>
-
-                                        <div class="product-buy">
-                                            <div></div>
-                                        </div>
-                                    </a>
-                                    <a
-                                        href="#!"
-                                        class="product-item col p-2-5 t-4 m-12"
-                                    >
-                                        <img
-                                            class="product-img"
-                                            src="./img/sach10.webp"
-                                            alt=""
-                                        />
-
-                                        <div class="product-more">Xem thêm</div>
-                                        <div class="product-content">
-                                            <p class="product-name">Hạ Đỏ</p>
-                                            <span class="product-price">
-                                                42.000 đ
-
-                                                <span class="product-heart">
-                                                    <i class="fas fa-heart"></i>
-                                                </span>
-                                            </span>
-                                        </div>
-
-                                        <div class="product-buy">
-                                            <div></div>
-                                        </div>
-                                    </a>
                                 </a>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="sale-box">
-                    <div class="sale-block">
-                        <i class="fas fa-sync-alt"></i>
-                        <span>Hoàn trả trong 30 ngày</span>
-                    </div>
-                    <div class="sale-block">
-                        <i class="fas fa-truck"></i>
-                        <span>Giao hàng miễn phí</span>
-                    </div>
-                    <div class="sale-block">
-                        <i class="far fa-life-ring"></i>
-                        <span>Thanh toán linh hoạt</span>
-                    </div>
-                    <div class="sale-block">
-                        <i class="fas fa-users"></i>
-                        <span>Hỗ trợ khách hàng</span>
-                    </div>
-                </div>
-            </div>
-
-            <footer class="footer" id="footer_id">
-                <div class="container">
-                    <div class="footer-wrap">
-                        <div class="footer-main">
-                            <h1 class="footer-heading">VỀ CHÚNG TÔI</h1>
-                            <div class="footer-content">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p>
-                                    Khu II, đường 3/2 <br />
-                                    phường Xuân Khánh, quận Ninh Kiều <br />
-                                    thành phố Cần Thơ, Việt Nam
-                                </p>
-                            </div>
-                            <div class="footer-content">
-                                <i class="fas fa-phone-alt"></i>
-                                <p>
-                                    +84 123 456 789<br />
-                                    +84 987 654 321
-                                </p>
-                            </div>
-                            <div class="footer-content">
-                                <i class="fas fa-envelope"></i>
-                                <p>ct18816dhct06@student.ctu.edu.vn</p>
-                            </div>
-                        </div>
-                        <div class="footer-main">
-                            <h1 class="footer-heading">CHÍNH SÁCH</h1>
-                            <div class="footer-content">
-                                <p>Chính sách bán hàng</p>
-                            </div>
-                            <div class="footer-content">
-                                <p>Chính sách đổi trả</p>
-                            </div>
-                            <div class="footer-content">
-                                <p>Chính sách bảo mật</p>
-                            </div>
-                            <div class="footer-content">
-                                <p>Điều khoản dịch vụ</p>
-                            </div>
-                        </div>
-                        <div class="footer-main">
-                            <h1 class="footer-heading">THÔNG TIN</h1>
-                            <div class="footer-content">
-                                <p>Hướng dẫn đặt hàng</p>
-                            </div>
-                            <div class="footer-content">
-                                <p>Hướng dẫn mua hàng</p>
-                            </div>
-                            <div class="footer-content">
-                                <p>Hướng dẫn hoàn trả</p>
-                            </div>
-                        </div>
-                        <div class="footer-main">
-                            <h1 class="footer-heading">
-                                Kết nối với chúng tôi
-                            </h1>
-                            <div class="footer-content">
-                                <i class="footer-icon-4 fab fa-facebook"></i>
-                                <p>Facebook</p>
-                            </div>
-                            <div class="footer-content">
-                                <i class="footer-icon-4 fab fa-linkedin"></i>
-                                <p>LinkedIn</p>
-                            </div>
-                            <div class="footer-content">
-                                <i class="footer-icon-4 fab fa-tiktok"></i>
-                                <p>Tiktok</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
-            <div class="note">
-                <div class="container">
-                    <p>© Bản quyền thuộc về CT18816-06</p>
                 </div>
             </div>
         </div>
-        <a class="return-home" href="#">
-            <i class="fa fa-angle-up"></i>
-        </a>
-    </body>
-    <script src="./js/slider.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/dathang.js"></script>
+
+        <div class="container">
+            <div class="sale-box">
+                <div class="sale-block">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Hoàn trả trong 30 ngày</span>
+                </div>
+                <div class="sale-block">
+                    <i class="fas fa-truck"></i>
+                    <span>Giao hàng miễn phí</span>
+                </div>
+                <div class="sale-block">
+                    <i class="far fa-life-ring"></i>
+                    <span>Thanh toán linh hoạt</span>
+                </div>
+                <div class="sale-block">
+                    <i class="fas fa-users"></i>
+                    <span>Hỗ trợ khách hàng</span>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="footer_id">
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-main">
+                        <h1 class="footer-heading">VỀ CHÚNG TÔI</h1>
+                        <div class="footer-content">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>
+                                Khu II, đường 3/2 <br />
+                                phường Xuân Khánh, quận Ninh Kiều <br />
+                                thành phố Cần Thơ, Việt Nam
+                            </p>
+                        </div>
+                        <div class="footer-content">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>
+                                +84 123 456 789<br />
+                                +84 987 654 321
+                            </p>
+                        </div>
+                        <div class="footer-content">
+                            <i class="fas fa-envelope"></i>
+                            <p>ct18816dhct06@student.ctu.edu.vn</p>
+                        </div>
+                    </div>
+                    <div class="footer-main">
+                        <h1 class="footer-heading">CHÍNH SÁCH</h1>
+                        <div class="footer-content">
+                            <p>Chính sách bán hàng</p>
+                        </div>
+                        <div class="footer-content">
+                            <p>Chính sách đổi trả</p>
+                        </div>
+                        <div class="footer-content">
+                            <p>Chính sách bảo mật</p>
+                        </div>
+                        <div class="footer-content">
+                            <p>Điều khoản dịch vụ</p>
+                        </div>
+                    </div>
+                    <div class="footer-main">
+                        <h1 class="footer-heading">THÔNG TIN</h1>
+                        <div class="footer-content">
+                            <p>Hướng dẫn đặt hàng</p>
+                        </div>
+                        <div class="footer-content">
+                            <p>Hướng dẫn mua hàng</p>
+                        </div>
+                        <div class="footer-content">
+                            <p>Hướng dẫn hoàn trả</p>
+                        </div>
+                    </div>
+                    <div class="footer-main">
+                        <h1 class="footer-heading">
+                            Kết nối với chúng tôi
+                        </h1>
+                        <div class="footer-content">
+                            <i class="footer-icon-4 fab fa-facebook"></i>
+                            <p>Facebook</p>
+                        </div>
+                        <div class="footer-content">
+                            <i class="footer-icon-4 fab fa-linkedin"></i>
+                            <p>LinkedIn</p>
+                        </div>
+                        <div class="footer-content">
+                            <i class="footer-icon-4 fab fa-tiktok"></i>
+                            <p>Tiktok</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="note">
+            <div class="container">
+                <p>© Bản quyền thuộc về CT18816-06</p>
+            </div>
+        </div>
+    </div>
+    <a class="return-home" href="#">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</body>
+<script src="./js/slider.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/dathang.js"></script>
+
 </html>

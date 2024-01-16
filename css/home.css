@@ -464,26 +464,16 @@ html {
     border: 1px solid #e3e3e3;
     border-radius: 2px;
     transition: all ease-in-out 0.4s;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f26a4e;
+    color: #fff;
 
-.product-buy div {
-    width: 100%;
-    height: 100%;
-    background: url(../img/test.png) no-repeat scroll center -304px;
-    transform: scale(70%);
-    transition: inherit;
 }
 
 .product-buy:hover {
     background-color: #ee4d2d !important;
-}
-
-.product-item:hover .product-buy {
-    background-color: #646464;
-}
-
-.product-item:hover .product-buy div {
-    background-position: center -354px;
 }
 
 /* SALE BOX */
